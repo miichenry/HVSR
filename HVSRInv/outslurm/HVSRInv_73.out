@@ -1,0 +1,60 @@
+Job ID: 36834490
+Array Task ID: 73
+Executing task for index: 73
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2021 The MathWorks, Inc.
+                  R2021b (9.11.0.1769968) 64-bit (glnxa64)
+                             September 17, 2021
+
+Caught "std::exception" Exception message is:
+Error loading /unige/matlab2021b/bin/glnxa64/matlab_startup_plugins/cefclient/mwwebwindowinit.so. /unige/matlab2021b/bin/glnxa64/matlab_startup_plugins/cefclient/mwwebwindowinit.so: cannot open shared object file: Remote I/O error: Success: Success
+Caught "std::exception" Exception message is:
+Error loading /unige/matlab2021b/bin/glnxa64/matlab_startup_plugins/jmi/mwglobal_emattachsvc.so. /unige/matlab2021b/bin/glnxa64/matlab_startup_plugins/jmi/mwglobal_emattachsvc.so: cannot open shared object file: Remote I/O error: Success: Success
+Caught "std::exception" Exception message is:
+Error loading /unige/matlab2021b/bin/glnxa64/matlab_startup_plugins/jmi/mwjmiplugin.so. /unige/matlab2021b/bin/glnxa64/matlab_startup_plugins/jmi/mwjmiplugin.so: cannot open shared object file: Remote I/O error: Success: Success
+Caught "std::exception" Exception message is:
+Error loading /unige/matlab2021b/bin/glnxa64/matlab_startup_plugins/jmi/mwpermvm_emattachsvc.so. /unige/matlab2021b/bin/glnxa64/matlab_startup_plugins/jmi/mwpermvm_emattachsvc.so: cannot open shared object file: Remote I/O error: Connection timed out: Connection timed out
+Caught "std::exception" Exception message is:
+Error loading /unige/matlab2021b/bin/glnxa64/matlab_startup_plugins/parallel/cloudcenterclient/startup_plugin/mwparallel_cloudcenterclient_startup_plugin.so. /unige/matlab2021b/bin/glnxa64/matlab_startup_plugins/parallel/cloudcenterclient/startup_plugin/mwparallel_cloudcenterclient_startup_plugin.so: cannot open shared object file: Remote I/O error: Connection timed out: Connection timed out
+Caught "std::exception" Exception message is:
+Error loading /unige/matlab2021b/bin/glnxa64/matlab_startup_plugins/licensing/weblicensing/startup_plugin/mwweblicensing_startup_plugin.so. /unige/matlab2021b/bin/glnxa64/matlab_startup_plugins/licensing/weblicensing/startup_plugin/mwweblicensing_startup_plugin.so: cannot open shared object file: Remote I/O error: Connection timed out: Connection timed out
+Caught "std::exception" Exception message is:
+Error loading /unige/matlab2021b/bin/glnxa64/matlab_startup_plugins/startup_plugins/pathdef/mwPathdefPlugin.so. /unige/matlab2021b/bin/glnxa64/matlab_startup_plugins/startup_plugins/pathdef/mwPathdefPlugin.so: cannot open shared object file: Remote I/O error: Connection timed out: Connection timed out
+Caught "std::exception" Exception message is:
+Error loading /unige/matlab2021b/bin/glnxa64/matlab_startup_plugins/supportsoftwarematlabmanagement/mw_spregistration.so. /unige/matlab2021b/bin/glnxa64/matlab_startup_plugins/supportsoftwarematlabmanagement/mw_spregistration.so: cannot open shared object file: Remote I/O error: Connection timed out: Connection timed out
+Caught "std::exception" Exception message is:
+Error loading /unige/matlab2021b/bin/glnxa64/matlab_startup_plugins/matlab_local/mwGettingStarted.so. /unige/matlab2021b/bin/glnxa64/matlab_startup_plugins/matlab_local/mwGettingStarted.so: cannot open shared object file: Remote I/O error: Connection timed out: Connection timed out
+Caught "std::exception" Exception message is:
+Error loading /unige/matlab2021b/bin/glnxa64/matlab_startup_plugins/mvm_cache_startup_plugin/mwmvm_cache_startup_plugin.so. /unige/matlab2021b/bin/glnxa64/matlab_startup_plugins/mvm_cache_startup_plugin/mwmvm_cache_startup_plugin.so: cannot open shared object file: Remote I/O error: Connection timed out: Connection timed out
+Caught "std::exception" Exception message is:
+Error loading /unige/matlab2021b/bin/glnxa64/matlab_startup_plugins/addons/registry/mwaddons_registry_startup_plugin.so. /unige/matlab2021b/bin/glnxa64/matlab_startup_plugins/addons/registry/mwaddons_registry_startup_plugin.so: cannot open shared object file: Remote I/O error: Connection timed out: Connection timed out
+Caught "std::exception" Exception message is:
+Error loading /unige/matlab2021b/bin/glnxa64/matlab_startup_plugins/connector/worker/libmwconnectorworkerstartupbundle.so. /unige/matlab2021b/bin/glnxa64/matlab_startup_plugins/connector/worker/libmwconnectorworkerstartupbundle.so: cannot open shared object file: Remote I/O error: Connection timed out: Connection timed out
+Caught "std::exception" Exception message is:
+Error loading /unige/matlab2021b/bin/glnxa64/matlab_startup_plugins/graphics/graphics_init_plugin/mwgraphics_init_plugin.so. /unige/matlab2021b/bin/glnxa64/matlab_startup_plugins/graphics/graphics_init_plugin/mwgraphics_init_plugin.so: cannot open shared object file: Remote I/O error: Connection timed out: Connection timed out
+Caught "std::exception" Exception message is:
+Error loading /unige/matlab2021b/bin/glnxa64/matlab_startup_plugins/startup_plugins/startup_folder/mwStartupFolderPlugin.so. /unige/matlab2021b/bin/glnxa64/matlab_startup_plugins/startup_plugins/startup_folder/mwStartupFolderPlugin.so: cannot open shared object file: Remote I/O error: Connection timed out: Connection timed out
+Caught "std::exception" Exception message is:
+Message Catalog MATLAB:legacy_two_part was not loaded from the file. Please check file location, format or contents
+Caught "std::exception" Exception message is:
+Error loading /unige/matlab2021b/bin/glnxa64/builtins/matlab_toolbox_general_builtins/mwmlintrospect_builtinimpl.so. /unige/matlab2021b/bin/glnxa64/builtins/matlab_toolbox_general_builtins/mwmlintrospect_builtinimpl.so: cannot open shared object file: Remote I/O error: Success: Success
+Caught "std::exception" Exception message is:
+Error loading /unige/matlab2021b/bin/glnxa64/builtins/libmatlab_toolbox_timefun/mwmltiming_builtinimpl.so. /unige/matlab2021b/bin/glnxa64/builtins/libmatlab_toolbox_timefun/mwmltiming_builtinimpl.so: cannot open shared object file: Remote I/O error: Success: Success
+Caught "std::exception" Exception message is:
+Error loading /unige/matlab2021b/bin/glnxa64/builtins/mcr_under_mvm_server/mwmcr_builtinimpl.so. /unige/matlab2021b/bin/glnxa64/builtins/mcr_under_mvm_server/mwmcr_builtinimpl.so: cannot open shared object file: Remote I/O error: Inappropriate ioctl for device: Inappropriate ioctl for device
+Caught "std::exception" Exception message is:
+Error loading /unige/matlab2021b/bin/glnxa64/matlab_startup_plugins/performance/mwperformance_startup.so. /unige/matlab2021b/bin/glnxa64/matlab_startup_plugins/performance/mwperformance_startup.so: cannot open shared object file: Remote I/O error: Connection timed out: Connection timed out
+Caught "std::exception" Exception message is:
+Error loading /unige/matlab2021b/bin/glnxa64/matlab_startup_plugins/prefdirwarning/libmw_prefdirwarning.so. /unige/matlab2021b/bin/glnxa64/matlab_startup_plugins/prefdirwarning/libmw_prefdirwarning.so: cannot open shared object file: Remote I/O error: Connection timed out: Connection timed out
+Caught "std::exception" Exception message is:
+Error loading /unige/matlab2021b/bin/glnxa64/matlab_startup_plugins/referenceapi/reference_startup_plugin.so. /unige/matlab2021b/bin/glnxa64/matlab_startup_plugins/referenceapi/reference_startup_plugin.so: cannot open shared object file: Remote I/O error: Connection timed out: Connection timed out
+Caught "std::exception" Exception message is:
+Error loading /unige/matlab2021b/bin/glnxa64/matlab_startup_plugins/shared_deviceplugindetection/mwdevicepluginstartup.so. /unige/matlab2021b/bin/glnxa64/matlab_startup_plugins/shared_deviceplugindetection/mwdevicepluginstartup.so: cannot open shared object file: Remote I/O error: Connection timed out: Connection timed out
+Caught "std::exception" Exception message is:
+Error loading /unige/matlab2021b/bin/glnxa64/matlab_startup_plugins/tabcompletion/tabcompletion_startup_plugin.so. /unige/matlab2021b/bin/glnxa64/matlab_startup_plugins/tabcompletion/tabcompletion_startup_plugin.so: cannot open shared object file: Remote I/O error: Connection timed out: Connection timed out
+Caught "std::exception" Exception message is:
+Error loading /unige/matlab2021b/bin/glnxa64/matlab_startup_plugins/graphics/graphics_init_plugin/mwgraphics_init_plugin.so. /unige/matlab2021b/bin/glnxa64/matlab_startup_plugins/graphics/graphics_init_plugin/mwgraphics_init_plugin.so: cannot open shared object file: Remote I/O error: Connection timed out: Connection timed out
+Caught "std::exception" Exception message is:
+Error loading /unige/matlab2021b/bin/glnxa64/matlab_startup_plugins/matlabdata/startupplugin/libmwmda_startupplugin.so. /unige/matlab2021b/bin/glnxa64/matlab_startup_plugins/matlabdata/startupplugin/libmwmda_startupplugin.so: cannot open shared object file: Remote I/O error: Connection timed out: Connection timed out
+slurmstepd: error: *** JOB 36834490 ON cpu056 CANCELLED AT 2024-12-06T09:01:55 DUE TO TIME LIMIT ***

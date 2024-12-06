@@ -1,0 +1,21 @@
+Job ID: 36834364
+Array Task ID: 55
+Executing task for index: 55
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2021 The MathWorks, Inc.
+                  R2021b (9.11.0.1769968) 64-bit (glnxa64)
+                             September 17, 2021
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+Caught "std::exception" Exception message is:
+Error loading /unige/matlab2021b/bin/glnxa64/builtins/matlab_toolbox_lang_builtins/mwdiagnostic_builtinimpl.so. libmwtimefun.so: cannot open shared object file: No such file or directory: Success: Success
+Caught "std::exception" Exception message is:
+Message Catalog MATLAB:legacy_two_part was not loaded from the file. Please check file location, format or contents
+Caught "std::exception" Exception message is:
+Error loading /unige/matlab2021b/bin/glnxa64/builtins/matlab_toolbox_general_builtins/mwwkspintrospect_builtinimpl.so. /unige/matlab2021b/bin/glnxa64/builtins/matlab_toolbox_general_builtins/mwwkspintrospect_builtinimpl.so: cannot open shared object file: Remote I/O error: Success: Success
+Caught "std::exception" Exception message is:
+Error loading /unige/matlab2021b/bin/glnxa64/builtins/matlab_toolbox_lang_builtins/mwdiagnostic_builtinimpl.so. /unige/matlab2021b/bin/glnxa64/builtins/matlab_toolbox_lang_builtins/mwdiagnostic_builtinimpl.so: cannot open shared object file: Remote I/O error: Success: Success

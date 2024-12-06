@@ -1,0 +1,153 @@
+Job ID: 36834295
+Array Task ID: 24
+Executing task for index: 24
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2021 The MathWorks, Inc.
+                  R2021b (9.11.0.1769968) 64-bit (glnxa64)
+                             September 17, 2021
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+Initial Parameters:
+------------------------------------------------------------------------------------------------------------------------
+LayerNum: 2
+InvNum: 5
+IterNum: 50000
+PopNum: 1000
+GeneNum: 20
+FreqMin: 0.3
+FreqMax: 48
+Using data from file: ../output/output_DFA_filtered_v11Nov/22690_DFA.txt
+Station: 22690
+Loaded InitModData:
+  Columns 1 through 3
+
+                         1                       100                       500
+                        50                       600                      1500
+
+  Columns 4 through 6
+
+                      2500                     2.029                    2.5417
+                      3500                    2.3663                    2.6643
+
+  Columns 7 through 8
+
+                    0.0013                    0.0167
+                0.00089286                    0.0083
+
+FreqMin:FreqMax:  0.3:48
+SampleNum: 235, closestIndex2: 254, closestIndex1: 20
+Caught "std::exception" Exception message is:
+Message Catalog MATLAB:Debugger was not loaded from the file. Please check file location, format or contents
+{Previously accessible file
+"/unige/matlab2021b/toolbox/matlab/uitools/private/javacomponentdoc_helper.p"
+is now inaccessible.
+} 
+Could not create on-disk crash report: failed opening file: No such file or directory: iostream error
+
+--------------------------------------------------------------------------------
+             std::terminate() detected at 2024-12-05 10:35:36 +0100
+--------------------------------------------------------------------------------
+
+Configuration:
+  Crash Decoding           : Disabled - No sandbox or build area path
+  Crash Mode               : continue (default)
+  Default Encoding         : US-ASCII
+  Deployed                 : false
+  GNU C Library            : 2.28 stable
+  Graphics Driver          : Unknown software 
+  Graphics Text Issue Info : xmin=0.000000, ymin=-3.000000, xmax=16.000000, ymax=10.000000
+  Graphics card 1          : 0x1a03 ( 0x1a03 ) 0x2000 Version 0.0.0.0 (0-0-0)
+  Java Version             : Java 1.8.0_202-b08 with Oracle Corporation Java HotSpot(TM) 64-Bit Server VM mixed mode
+  MATLAB Architecture      : glnxa64
+  MATLAB Entitlement ID    : 665316
+  MATLAB Root              : /unige/matlab2021b
+  MATLAB Version           : 9.11.0.1769968 (R2021b)
+  OpenGL                   : software
+  Operating System         : "Rocky Linux release 8.10 (Green Obsidian)"
+  Process ID               : 1809972
+  Processor ID             : x86 Family 6 Model 85 Stepping 7, GenuineIntel
+  Session Key              : 8bf9ba35-9a03-4c91-a932-794191fffca0
+  Static TLS mitigation    : Disabled: Unnecessary
+  Window System            : No active display
+
+Fault Count: 1
+
+
+Abnormal termination:
+std::terminate()
+
+Current Thread: 'MCR 0 interpret' id 23362273277696
+
+Register State (captured):
+  RAX = 0000000000000000  RBX = 00001540d3b12b88
+  RCX = 000000000000000a  RDX = 00001540d3afa6c8
+  RSP = 0000153f73ff9690  RBP = 0000153f73ff9a70
+  RSI = 00001540d3ada52a  RDI = 0000153f73ff96a0
+
+   R8 = 0000153f73ff999a   R9 = 0000153f73ff999a
+  R10 = 65646f6d20646578  R11 = 0000000000000000
+  R12 = 0000153f73ff9ad0  R13 = 0000153f73ff9f80
+  R14 = 0000153f73ffa400  R15 = 0000000000000000
+
+  RIP = 00001540d3a79b3e  EFL = 0069007300730065
+
+   CS = 0062   FS = 006c   GS = 0065
+
+Stack Trace (captured):
+[  0] 0x00001540d3a6ec03          /unige/matlab2021b/bin/glnxa64/libmwfl.so+00388099
+[  1] 0x00001540d3a6edfc          /unige/matlab2021b/bin/glnxa64/libmwfl.so+00388604 _ZN10foundation4core4diag15stacktrace_base7captureEm+00000028
+[  2] 0x00001540d3a71d1e          /unige/matlab2021b/bin/glnxa64/libmwfl.so+00400670
+[  3] 0x00001540d3a74f82          /unige/matlab2021b/bin/glnxa64/libmwfl.so+00413570
+[  4] 0x0000153fdc9efb47         /unige/matlab2021b/bin/glnxa64/libmwmcr.so+01116999
+[  5] 0x0000153fdc9f18d0         /unige/matlab2021b/bin/glnxa64/libmwmcr.so+01124560
+[  6] 0x0000153fdc9f1deb         /unige/matlab2021b/bin/glnxa64/libmwmcr.so+01125867
+[  7] 0x0000153fdc9f2540         /unige/matlab2021b/bin/glnxa64/libmwmcr.so+01127744
+[  8] 0x00001540d5574986 /unige/matlab2021b/bin/glnxa64/../../sys/os/glnxa64/libstdc++.so.6+00596358
+[  9] 0x00001540d5573a79 /unige/matlab2021b/bin/glnxa64/../../sys/os/glnxa64/libstdc++.so.6+00592505
+[ 10] 0x00001540d55743c5 /unige/matlab2021b/bin/glnxa64/../../sys/os/glnxa64/libstdc++.so.6+00594885 __gxx_personality_v0+00000709
+[ 11] 0x00001540d52db553 /unige/matlab2021b/bin/glnxa64/../../sys/os/glnxa64/libgcc_s.so.1+00066899
+[ 12] 0x00001540d52dbdd5 /unige/matlab2021b/bin/glnxa64/../../sys/os/glnxa64/libgcc_s.so.1+00069077 _Unwind_Resume+00000293
+[ 13] 0x0000153f97ce59a8         /unige/matlab2021b/bin/glnxa64/libmwudd.so+00510376
+[ 14] 0x0000153f97d30739         /unige/matlab2021b/bin/glnxa64/libmwudd.so+00816953
+[ 15] 0x00001540d38917d7            /unige/matlab2021b/bin/glnxa64/libmx.so+00960471
+[ 16] 0x00001540d3891848            /unige/matlab2021b/bin/glnxa64/libmx.so+00960584
+[ 17] 0x00001540d38919d8            /unige/matlab2021b/bin/glnxa64/libmx.so+00960984
+[ 18] 0x00001540d3891a78            /unige/matlab2021b/bin/glnxa64/libmx.so+00961144
+[ 19] 0x00001540d3891c25            /unige/matlab2021b/bin/glnxa64/libmx.so+00961573 _ZN6matrix6detail10noninlined12mx_array_api14mxDestroyArrayEP11mxArray_tag+00000165
+[ 20] 0x0000153e727c3365 /unige/matlab2021b/bin/glnxa64/builtins/matlab_graphics_hgbuiltins/../../../../bin/glnxa64/libmwhgutils.so+01389413 _ZN7hgutils8HGHandleD2Ev+00000053
+[ 21] 0x0000153e72f471f7 /unige/matlab2021b/bin/glnxa64/builtins/matlab_graphics_hgbuiltins/../../../../bin/glnxa64/libmwhg.so+06779383
+[ 22] 0x0000153e72f55e93 /unige/matlab2021b/bin/glnxa64/builtins/matlab_graphics_hgbuiltins/../../../../bin/glnxa64/libmwhg.so+06839955
+[ 23] 0x0000153e72f507bf /unige/matlab2021b/bin/glnxa64/builtins/matlab_graphics_hgbuiltins/../../../../bin/glnxa64/libmwhg.so+06817727
+[ 24] 0x0000153e72f2ec15 /unige/matlab2021b/bin/glnxa64/builtins/matlab_graphics_hgbuiltins/../../../../bin/glnxa64/libmwhg.so+06679573
+[ 25] 0x0000153e72e7aa70 /unige/matlab2021b/bin/glnxa64/builtins/matlab_graphics_hgbuiltins/../../../../bin/glnxa64/libmwhg.so+05941872
+[ 26] 0x0000153e72e7acc1 /unige/matlab2021b/bin/glnxa64/builtins/matlab_graphics_hgbuiltins/../../../../bin/glnxa64/libmwhg.so+05942465
+[ 27] 0x0000153f6fc45522   /unige/matlab2021b/bin/glnxa64/libmwmcos_impl.so+03802402
+[ 28] 0x0000153f6fc3832c   /unige/matlab2021b/bin/glnxa64/libmwmcos_impl.so+03748652
+[ 29] 0x0000153f6fc31300   /unige/matlab2021b/bin/glnxa64/libmwmcos_impl.so+03719936
+[ 30] 0x0000153e72e2ac29 /unige/matlab2021b/bin/glnxa64/builtins/matlab_graphics_hgbuiltins/../../../../bin/glnxa64/libmwhg.so+05614633
+[ 31] 0x0000153e72e2ae68 /unige/matlab2021b/bin/glnxa64/builtins/matlab_graphics_hgbuiltins/../../../../bin/glnxa64/libmwhg.so+05615208
+[ 32] 0x0000153e72e267d5 /unige/matlab2021b/bin/glnxa64/builtins/matlab_graphics_hgbuiltins/../../../../bin/glnxa64/libmwhg.so+05597141
+[ 33] 0x0000153e72e2b23b /unige/matlab2021b/bin/glnxa64/builtins/matlab_graphics_hgbuiltins/../../../../bin/glnxa64/libmwhg.so+05616187 MLTerminate_hg+00000027
+[ 34] 0x0000153fdc8092da /unige/matlab2021b/bin/glnxa64/libmwm_dispatcher.so+00783066
+[ 35] 0x0000153fdc848d48 /unige/matlab2021b/bin/glnxa64/libmwm_dispatcher.so+01043784 _ZN11Mdispatcher14cleanupAllFcnsEv+00000200
+[ 36] 0x0000153f9d118419       /unige/matlab2021b/bin/glnxa64/libmwm_lxe.so+11645977 _ZN9MathWorks3lxe17ShutdownLxeEngineEb+00000137
+[ 37] 0x0000153fdc9a8378         /unige/matlab2021b/bin/glnxa64/libmwmcr.so+00824184
+[ 38] 0x0000153fdc9eaa1a         /unige/matlab2021b/bin/glnxa64/libmwmcr.so+01096218
+[ 39] 0x0000153fdc9eafbb         /unige/matlab2021b/bin/glnxa64/libmwmcr.so+01097659
+[ 40] 0x0000153fdc9f7829         /unige/matlab2021b/bin/glnxa64/libmwmcr.so+01148969
+[ 41] 0x0000153fdc9765f3         /unige/matlab2021b/bin/glnxa64/libmwmcr.so+00620019
+[ 42] 0x0000153fdc9ad0ec         /unige/matlab2021b/bin/glnxa64/libmwmcr.so+00844012
+[ 43] 0x0000153fdc9ad362         /unige/matlab2021b/bin/glnxa64/libmwmcr.so+00844642
+[ 44] 0x00001540d46878a7 /unige/matlab2021b/bin/glnxa64/libmwboost_thread.so.1.72.0+00063655
+[ 45] 0x00001540d586e1ca                             /lib64/libpthread.so.0+00033226
+[ 46] 0x00001540d4f2e8d3                                   /lib64/libc.so.6+00235731 clone+00000067
+
+
+
+
+MATLAB is exiting because of fatal error
+/var/spool/slurmd/job36834295/slurm_script: line 26: 1809972 Killed                  matlab -nodisplay -nosplash -r "filename='$line'; tic; run('run_HVSRInv.m'); toc; exit;"

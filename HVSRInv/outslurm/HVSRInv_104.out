@@ -1,0 +1,6 @@
+Job ID: 36834541
+Array Task ID: 104
+Executing task for index: 104
+Unable to open file for Java VM logging
+std::exception: libmwkeybrd_impl.so: cannot open shared object file: No such file or directory: Success
+

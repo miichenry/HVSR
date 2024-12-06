@@ -1,0 +1,112 @@
+Job ID: 36834284
+Array Task ID: 13
+Executing task for index: 13
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2021 The MathWorks, Inc.
+                  R2021b (9.11.0.1769968) 64-bit (glnxa64)
+                             September 17, 2021
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+Initial Parameters:
+------------------------------------------------------------------------------------------------------------------------
+LayerNum: 2
+InvNum: 5
+IterNum: 50000
+PopNum: 1000
+GeneNum: 20
+FreqMin: 0.3
+FreqMax: 48
+Using data from file: ../output/output_DFA_filtered_v11Nov/22955_DFA.txt
+Station: 22955
+Loaded InitModData:
+  Columns 1 through 3
+
+                         1                       100                       500
+                        50                       600                      1500
+
+  Columns 4 through 6
+
+                      2500                     2.029                    2.5417
+                      3500                    2.3663                    2.6643
+
+  Columns 7 through 8
+
+                    0.0013                    0.0167
+                0.00089286                    0.0083
+
+FreqMin:FreqMax:  0.3:48
+SampleNum: 235, closestIndex2: 254, closestIndex1: 20
+Could not create on-disk crash report: failed opening file: No such file or directory: iostream error
+
+--------------------------------------------------------------------------------
+          Segmentation violation detected at 2024-12-05 08:58:32 +0100
+--------------------------------------------------------------------------------
+
+Configuration:
+  Crash Decoding           : Disabled - No sandbox or build area path
+  Crash Mode               : continue (default)
+  Default Encoding         : US-ASCII
+  Deployed                 : false
+  GNU C Library            : 2.28 stable
+  Graphics Driver          : Unknown software 
+  Graphics Text Issue Info : xmin=0.000000, ymin=-3.000000, xmax=16.000000, ymax=10.000000
+  Graphics card 1          : 0x1a03 ( 0x1a03 ) 0x2000 Version 0.0.0.0 (0-0-0)
+  Java Version             : Java 1.8.0_202-b08 with Oracle Corporation Java HotSpot(TM) 64-Bit Server VM mixed mode
+  MATLAB Architecture      : glnxa64
+  MATLAB Entitlement ID    : 665316
+  MATLAB Root              : /unige/matlab2021b
+  MATLAB Version           : 9.11.0.1769968 (R2021b)
+  OpenGL                   : software
+  Operating System         : "Rocky Linux release 8.10 (Green Obsidian)"
+  Process ID               : 2423812
+  Processor ID             : x86 Family 6 Model 85 Stepping 7, GenuineIntel
+  Session Key              : 1cf3a0bf-6232-437e-95ee-2734ce61346a
+  Static TLS mitigation    : Disabled: Unnecessary
+  Window System            : No active display
+
+Fault Count: 1
+
+
+Abnormal termination:
+Segmentation violation
+
+Current Thread: 'OrderedWorkQ' id 22782246205184
+
+Register State (from fault):
+  RAX = 000014b8580997e0  RBX = 000014b867b12040
+  RCX = 000014babf46a360  RDX = 000014b867b13ab0
+  RSP = 000014b867b11de0  RBP = 000014b867b12190
+  RSI = 000014b867b11f28  RDI = 000014b867b12048
+
+   R8 = 0000000000000000   R9 = 000014b858000ace
+  R10 = 0000000000000000  R11 = 0000000000000000
+  R12 = 000014b867b11e20  R13 = 000014b867b11f20
+  R14 = 000014b8580997e0  R15 = 0000000000000000
+
+  RIP = 000014b97c26cf1d  EFL = 0000000000010202
+
+   CS = 0033   FS = 0000   GS = 0000
+
+Stack Trace (from fault):
+[  0] 0x000014b97c26cf1d /unige/matlab2021b/bin/glnxa64/matlab_startup_plugins/jmi/../../../../bin/glnxa64/libmwxmlutils.so+00044829 _ZN2mw8xmlutils12LibXML2Utils22readDOMDocumentFromUrlERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE+00000397
+[  1] 0x000014b967106f24 /unige/matlab2021b/bin/glnxa64/matlab_startup_plugins/matlab_path_metadata_source/../../../../bin/glnxa64/libmwaddons_registry_core.so+00552740
+[  2] 0x000014b9670ecf65 /unige/matlab2021b/bin/glnxa64/matlab_startup_plugins/matlab_path_metadata_source/../../../../bin/glnxa64/libmwaddons_registry_core.so+00446309
+[  3] 0x000014b9670edcd3 /unige/matlab2021b/bin/glnxa64/matlab_startup_plugins/matlab_path_metadata_source/../../../../bin/glnxa64/libmwaddons_registry_core.so+00449747
+[  4] 0x000014b967107b88 /unige/matlab2021b/bin/glnxa64/matlab_startup_plugins/matlab_path_metadata_source/../../../../bin/glnxa64/libmwaddons_registry_core.so+00555912
+[  5] 0x000014babfba1be0         /unige/matlab2021b/bin/glnxa64/libmwmvm.so+02825184 _ZNK7mwboost9function0IvEclEv+00000032
+[  6] 0x000014baba9775ec /unige/matlab2021b/bin/glnxa64/libmwsettingscore.so+02209260 _ZN7mwboost6detail17task_shared_stateINS_8functionIFvvEEEvE6do_runEv+00000028
+[  7] 0x000014baba972a8e /unige/matlab2021b/bin/glnxa64/libmwsettingscore.so+02189966 _ZN7mwboost13packaged_taskIvEclEv+00000078
+[  8] 0x000014b9671121f4 /unige/matlab2021b/bin/glnxa64/matlab_startup_plugins/matlab_path_metadata_source/../../../../bin/glnxa64/libmwaddons_registry_core.so+00598516
+[  9] 0x000014babe0708a7 /unige/matlab2021b/bin/glnxa64/libmwboost_thread.so.1.72.0+00063655
+[ 10] 0x000014babf2571ca                             /lib64/libpthread.so.0+00033226
+[ 11] 0x000014babe9178d3                                   /lib64/libc.so.6+00235731 clone+00000067
+
+
+
+
+MATLAB is exiting because of fatal error
+/var/spool/slurmd/job36834284/slurm_script: line 26: 2423812 Killed                  matlab -nodisplay -nosplash -r "filename='$line'; tic; run('run_HVSRInv.m'); toc; exit;"

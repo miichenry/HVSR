@@ -1,0 +1,5 @@
+Processing row 156: station 
+Traceback (most recent call last):
+  File "/home/users/h/henrymi2/HVSR/hvsr_window_rejection.py", line 14, in <module>
+    sta = sys.argv[1]
+IndexError: list index out of range

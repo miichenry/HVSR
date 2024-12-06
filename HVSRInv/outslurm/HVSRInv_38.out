@@ -1,0 +1,118 @@
+Job ID: 36834309
+Array Task ID: 38
+Executing task for index: 38
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2021 The MathWorks, Inc.
+                  R2021b (9.11.0.1769968) 64-bit (glnxa64)
+                             September 17, 2021
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+Initial Parameters:
+------------------------------------------------------------------------------------------------------------------------
+LayerNum: 2
+InvNum: 5
+IterNum: 50000
+PopNum: 1000
+GeneNum: 20
+FreqMin: 0.3
+FreqMax: 48
+Using data from file: ../output/output_DFA_filtered_v11Nov/22888_DFA.txt
+Station: 22888
+Loaded InitModData:
+  Columns 1 through 3
+
+                         1                       100                       500
+                        50                       600                      1500
+
+  Columns 4 through 6
+
+                      2500                     2.029                    2.5417
+                      3500                    2.3663                    2.6643
+
+  Columns 7 through 8
+
+                    0.0013                    0.0167
+                0.00089286                    0.0083
+
+FreqMin:FreqMax:  0.3:48
+SampleNum: 235, closestIndex2: 254, closestIndex1: 20
+Caught "std::exception" Exception message is:
+Message Catalog MATLAB:hg was not loaded from the file. Please check file location, format or contents
+MATLAB: runtime/shutdown.cpp:677: mnShutdownMatlabInternalImpl(bool, bool, const mwboost::optional<int>&, const std::shared_ptr<std::promise<void> >&, bool, bool)::<lambda()>: Assertion `Dynamic exception type: mwboost::exception_detail::clone_impl<fl::i18n::MessageCatalog::MessageCatalogLoadFailed>
+std::exception::what: Message Catalog MATLAB:Java was not loaded from the file. Please check file location, format or contents
+' failed.
+Could not create on-disk crash report: failed opening file: No such file or directory: iostream error
+
+--------------------------------------------------------------------------------
+                Assertion detected at 2024-12-05 08:55:20 +0100
+--------------------------------------------------------------------------------
+
+Configuration:
+  Crash Decoding           : Disabled - No sandbox or build area path
+  Crash Mode               : continue (default)
+  Default Encoding         : US-ASCII
+  Deployed                 : false
+  GNU C Library            : 2.28 stable
+  Graphics Driver          : Unknown software 
+  Graphics card 1          : 0x1a03 ( 0x1a03 ) 0x2000 Version 0.0.0.0 (0-0-0)
+  Java Version             : Java 1.8.0_202-b08 with Oracle Corporation Java HotSpot(TM) 64-Bit Server VM mixed mode
+  MATLAB Architecture      : glnxa64
+  MATLAB Entitlement ID    : 665316
+  MATLAB Root              : /unige/matlab2021b
+  MATLAB Version           : 9.11.0.1769968 (R2021b)
+  OpenGL                   : software
+  Operating System         : "Rocky Linux release 8.10 (Green Obsidian)"
+  Process ID               : 2849721
+  Processor ID             : x86 Family 6 Model 85 Stepping 7, GenuineIntel
+  Session Key              : cd47d663-d9dc-42e6-a974-a7b48fca27a4
+  Static TLS mitigation    : Disabled: Unnecessary
+  Window System            : No active display
+
+Fault Count: 1
+
+
+Assertion in mnShutdownMatlabInternalImpl(bool, bool, const mwboost::optional<int>&, const std::shared_ptr<std::promise<void> >&, bool, bool)::<lambda()> at runtime/shutdown.cpp line 677:
+Dynamic exception type: mwboost::exception_detail::clone_impl<fl::i18n::MessageCatalog::MessageCatalogLoadFailed>
+std::exception::what: Message Catalog MATLAB:Java was not loaded from the file. Please check file location, format or contents
+
+
+Current Thread: 'MCR 0 interpret' id 22454679029504
+
+Register State (captured):
+  RAX = 0000000000000000  RBX = 0000146d82d1eb88
+  RCX = 000000000000000a  RDX = 0000146c232ab3b0
+  RSP = 0000146c232aab80  RBP = 0000146c232aaf60
+  RSI = 0000146d82ce652a  RDI = 0000146c232aab90
+
+   R8 = 0000146c232aae8a   R9 = 0000146c232aae8a
+  R10 = 436567617373654d  R11 = 3a3a676f6c617461
+  R12 = 0000146d82d0eb08  R13 = 0000146c4bb4cd19
+  R14 = 0000146c4bb5bfc0  R15 = 0000146c232ab860
+
+  RIP = 0000146d82c85b3e  EFL = 7461636f6c20656c
+
+   CS = 6f69   FS = 2c6e   GS = 6620
+
+Stack Trace (captured):
+[  0] 0x0000146d82c7ac03          /unige/matlab2021b/bin/glnxa64/libmwfl.so+00388099
+[  1] 0x0000146d82c7adfc          /unige/matlab2021b/bin/glnxa64/libmwfl.so+00388604 _ZN10foundation4core4diag15stacktrace_base7captureEm+00000028
+[  2] 0x0000146d82c7ef45          /unige/matlab2021b/bin/glnxa64/libmwfl.so+00405317
+[  3] 0x0000146d82c7f080          /unige/matlab2021b/bin/glnxa64/libmwfl.so+00405632
+[  4] 0x0000146c4bacddc7         /unige/matlab2021b/bin/glnxa64/libmwmcr.so+00646599
+[  5] 0x0000146c4bb48829         /unige/matlab2021b/bin/glnxa64/libmwmcr.so+01148969
+[  6] 0x0000146c4bac75f3         /unige/matlab2021b/bin/glnxa64/libmwmcr.so+00620019
+[  7] 0x0000146c4bafe0ec         /unige/matlab2021b/bin/glnxa64/libmwmcr.so+00844012
+[  8] 0x0000146c4bafe362         /unige/matlab2021b/bin/glnxa64/libmwmcr.so+00844642
+[  9] 0x0000146d838938a7 /unige/matlab2021b/bin/glnxa64/libmwboost_thread.so.1.72.0+00063655
+[ 10] 0x0000146d84a7a1ca                             /lib64/libpthread.so.0+00033226
+[ 11] 0x0000146d8413a8d3                                   /lib64/libc.so.6+00235731 clone+00000067
+
+
+
+
+MATLAB is exiting because of fatal error
+/var/spool/slurmd/job36834309/slurm_script: line 26: 2849721 Killed                  matlab -nodisplay -nosplash -r "filename='$line'; tic; run('run_HVSRInv.m'); toc; exit;"

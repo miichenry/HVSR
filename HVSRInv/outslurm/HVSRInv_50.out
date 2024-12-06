@@ -1,0 +1,44 @@
+Job ID: 36834358
+Array Task ID: 50
+Executing task for index: 50
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2021 The MathWorks, Inc.
+                  R2021b (9.11.0.1769968) 64-bit (glnxa64)
+                             September 17, 2021
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+Initial Parameters:
+------------------------------------------------------------------------------------------------------------------------
+LayerNum: 2
+InvNum: 5
+IterNum: 50000
+PopNum: 1000
+GeneNum: 20
+FreqMin: 0.3
+FreqMax: 48
+Using data from file: ../output/output_DFA_filtered_v11Nov/22533_DFA.txt
+Station: 22533
+Loaded InitModData:
+  Columns 1 through 3
+
+                         1                       100                       500
+                        50                       600                      1500
+
+  Columns 4 through 6
+
+                      2500                     2.029                    2.5417
+                      3500                    2.3663                    2.6643
+
+  Columns 7 through 8
+
+                    0.0013                    0.0167
+                0.00089286                    0.0083
+
+FreqMin:FreqMax:  0.3:48
+SampleNum: 235, closestIndex2: 254, closestIndex1: 20
+Caught "std::exception" Exception message is:
+Message Catalog MATLAB:builtins was not loaded from the file. Please check file location, format or contents

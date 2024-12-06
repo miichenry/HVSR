@@ -1,0 +1,83 @@
+HVSR data file: ../output/output_window_rejection_v13Nov_filtered/21555_WR.txt
+Inversion Parameters
+Number_of_Layers: 3
+Minimum_Frequency: 0.200
+Maximum_Frequency: 5.000
+Number_of_Genes: 20
+Number_of_Populations: 100
+Number_of_Iterations: 1000
+Number_of_Inversions: 10
+Layer_No: 1
+HMin HMax VMin VMax DenMin DenMax DampMin DampMax
+1.000 30.000 150.000 350.000 1.714 1.930 0.024 0.056
+Layer_No: 2
+HMin HMax VMin VMax DenMin DenMax DampMin DampMax
+25.000 250.000 250.000 400.000 1.841 1.967 0.021 0.033
+Layer_No: 3
+HMin HMax VMin VMax DenMin DenMax DampMin DampMax
+0.000 0.000 1400.000 1800.000 2.344 2.428 0.007 0.009
+Inversion_No:1
+H V Den Damp
+15.0000 203.0000 1.7142 0.0556
+38.0000 399.0000 1.9666 0.0277
+0.0000 1503.0000 2.4013 0.0069
+Goodness of Fit: 0.559882
+Inversion_No:2
+H V Den Damp
+12.0000 168.0000 1.8182 0.0556
+37.0000 375.0000 1.8951 0.0333
+0.0000 1434.0000 2.3574 0.0069
+Goodness of Fit: 0.558102
+Inversion_No:3
+H V Den Damp
+11.0000 154.0000 1.9270 0.0556
+35.0000 354.0000 1.9517 0.0333
+0.0000 1402.0000 2.3459 0.0069
+Goodness of Fit: 0.558106
+Inversion_No:4
+H V Den Damp
+17.0000 213.0000 1.7142 0.0457
+35.0000 398.0000 1.9666 0.0208
+0.0000 1407.0000 2.3646 0.0069
+Goodness of Fit: 0.567463
+Inversion_No:5
+H V Den Damp
+12.0000 167.0000 1.8222 0.0556
+35.0000 357.0000 1.9666 0.0333
+0.0000 1423.0000 2.3554 0.0069
+Goodness of Fit: 0.558170
+Inversion_No:6
+H V Den Damp
+14.0000 187.0000 1.7204 0.0556
+35.0000 372.0000 1.9451 0.0271
+0.0000 1402.0000 2.3541 0.0069
+Goodness of Fit: 0.561034
+Inversion_No:7
+H V Den Damp
+14.0000 195.0000 1.7142 0.0556
+39.0000 397.0000 1.9509 0.0333
+0.0000 1572.0000 2.3470 0.0069
+Goodness of Fit: 0.558122
+Inversion_No:8
+H V Den Damp
+12.0000 169.0000 1.9245 0.0556
+39.0000 392.0000 1.9404 0.0333
+0.0000 1498.0000 2.4163 0.0069
+Goodness of Fit: 0.558202
+Inversion_No:9
+H V Den Damp
+14.0000 194.0000 1.7194 0.0556
+39.0000 399.0000 1.9317 0.0333
+0.0000 1537.0000 2.3879 0.0069
+Goodness of Fit: 0.558241
+Inversion_No:10
+H V Den Damp
+11.0000 157.0000 1.9301 0.0556
+39.0000 386.0000 1.8570 0.0333
+0.0000 1429.0000 2.3856 0.0069
+Goodness of Fit: 0.558999
+Average Model
+H V Den Damp
+13.0000 181.0000 1.8004 0.0546
+37.0000 383.0000 1.9372 0.0309
+0.0000 1461.0000 2.3716 0.0069

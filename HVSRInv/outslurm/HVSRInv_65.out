@@ -1,0 +1,25 @@
+Job ID: 36834482
+Array Task ID: 65
+Executing task for index: 65
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2021 The MathWorks, Inc.
+                  R2021b (9.11.0.1769968) 64-bit (glnxa64)
+                             September 17, 2021
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+Initial Parameters:
+------------------------------------------------------------------------------------------------------------------------
+LayerNum: 2
+InvNum: 5
+IterNum: 50000
+PopNum: 1000
+GeneNum: 20
+FreqMin: 0.3
+FreqMax: 48
+Using data from file: ../output/output_DFA_filtered_v11Nov/22826_DFA.txt
+Caught "std::exception" Exception message is:
+Message Catalog MATLAB:Debugger was not loaded from the file. Please check file location, format or contents

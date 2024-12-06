@@ -1,0 +1,44 @@
+HVSR data file: ../output/output_DFA_filtered_v11Nov/22740_DFA.txt
+Inversion Parameters
+Number_of_Layers: 2
+Minimum_Frequency: 0.300
+Maximum_Frequency: 48.000
+Number_of_Genes: 20
+Number_of_Populations: 1000
+Number_of_Iterations: 50000
+Number_of_Inversions: 5
+Layer_No: 1
+HMin HMax VMin VMax DenMin DenMax DampMin DampMax
+1.000 100.000 500.000 2500.000 2.029 2.542 0.001 0.017
+Layer_No: 2
+HMin HMax VMin VMax DenMin DenMax DampMin DampMax
+50.000 600.000 1500.000 3500.000 2.366 2.664 0.001 0.008
+Inversion_No:1
+H V Den Damp
+5.0000 914.0000 2.1277 0.0129
+0.0000 3296.0000 2.6227 0.0009
+Goodness of Fit: 1.439999
+Inversion_No:2
+H V Den Damp
+4.0000 731.0000 2.5210 0.0121
+0.0000 3441.0000 2.3669 0.0009
+Goodness of Fit: 1.439999
+Inversion_No:3
+H V Den Damp
+5.0000 914.0000 2.0788 0.0128
+0.0000 3467.0000 2.4354 0.0009
+Goodness of Fit: 1.439999
+Inversion_No:4
+H V Den Damp
+4.0000 731.0000 2.4920 0.0121
+0.0000 3301.0000 2.4389 0.0009
+Goodness of Fit: 1.439999
+Inversion_No:5
+H V Den Damp
+4.0000 731.0000 2.4995 0.0121
+0.0000 3125.0000 2.5840 0.0009
+Goodness of Fit: 1.439999
+Average Model
+H V Den Damp
+4.0000 804.0000 2.3438 0.0124
+0.0000 3326.0000 2.4896 0.0009
