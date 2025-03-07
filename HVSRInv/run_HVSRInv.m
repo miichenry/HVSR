@@ -1,7 +1,7 @@
 % Set up the initial parameters
 LayerNum = 2;               % Number of layers
 InvNum = 5;                 % Number of inversions
-IterNum = 50000;             % Number of iterations
+IterNum = 25000;             % Number of iterations
 PopNum = 1000;               % Population size
 GeneNum = 20;               % Number of genes
 % Set additional parameters

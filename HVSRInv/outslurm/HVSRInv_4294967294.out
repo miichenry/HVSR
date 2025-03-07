@@ -1,6 +1,6 @@
-Job ID: 37084648
-Array Task ID: 113
-Executing task for index: 113
+Job ID: 37098761
+Array Task ID: 
+Executing task for index: 
 
                             < M A T L A B (R) >
                   Copyright 1984-2021 The MathWorks, Inc.
@@ -14,14 +14,14 @@ For product information, visit www.mathworks.com.
 Initial Parameters:
 ------------------------------------------------------------------------------------------------------------------------
 LayerNum: 2
-InvNum: 8
-IterNum: 50000
+InvNum: 5
+IterNum: 25000
 PopNum: 1000
 GeneNum: 20
 FreqMin: 0.3
 FreqMax: 48
-Using data from file: ../output/output_DFA_filtered_v11Nov/21701_DFA.txt
-Station: 21701
+Using data from file: ../output/output_DFA_filtered_v11Nov/21598_DFA.txt
+Station: 21598
 Loaded InitModData:
   Columns 1 through 3
 
@@ -105,44 +105,5 @@ fig1 =
 
   Use GET to show all properties
 
-
-fig1 = 
-
-  Figure (2) with properties:
-
-      Number: 2
-        Name: ''
-       Color: [0.94 0.94 0.94]
-    Position: [100 100 500 300]
-       Units: 'pixels'
-
-  Use GET to show all properties
-
-
-fig1 = 
-
-  Figure (2) with properties:
-
-      Number: 2
-        Name: ''
-       Color: [0.94 0.94 0.94]
-    Position: [100 100 500 300]
-       Units: 'pixels'
-
-  Use GET to show all properties
-
-
-fig1 = 
-
-  Figure (2) with properties:
-
-      Number: 2
-        Name: ''
-       Color: [0.94 0.94 0.94]
-    Position: [100 100 500 300]
-       Units: 'pixels'
-
-  Use GET to show all properties
-
-Inversion took: 48278.265569 seconds
-Elapsed time is 48295.709334 seconds.
+Inversion took: 15082.176357 seconds
+Elapsed time is 15100.255065 seconds.
