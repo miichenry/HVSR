@@ -1,0 +1,139 @@
+Processing row 59: station V6411,38.40011914,14.97275547,143.653
+Station: V6411
+Starting time: 17:22:32
+Days with complete data: 30
+
+  2021.289  [17:22:32]
+    Saved V6411_2021_289.csv
+
+  2021.290  [17:22:51]
+    Saved V6411_2021_290.csv
+
+  2021.291  [17:23:20]
+    Saved V6411_2021_291.csv
+
+  2021.292  [17:23:52]
+    Saved V6411_2021_292.csv
+
+  2021.293  [17:24:18]
+    Saved V6411_2021_293.csv
+
+  2021.294  [17:24:42]
+    Saved V6411_2021_294.csv
+
+  2021.295  [17:25:12]
+    Saved V6411_2021_295.csv
+
+  2021.296  [17:25:35]
+    Saved V6411_2021_296.csv
+
+  2021.297  [17:25:52]
+    Saved V6411_2021_297.csv
+
+  2021.298  [17:26:19]
+    Saved V6411_2021_298.csv
+
+  2021.299  [17:26:47]
+    Saved V6411_2021_299.csv
+
+  2021.300  [17:27:15]
+    Saved V6411_2021_300.csv
+
+  2021.301  [17:27:35]
+    Saved V6411_2021_301.csv
+
+  2021.302  [17:27:54]
+    Saved V6411_2021_302.csv
+
+  2021.303  [17:28:17]
+    Saved V6411_2021_303.csv
+
+  2021.304  [17:28:45]
+    Saved V6411_2021_304.csv
+
+  2021.305  [17:29:04]
+    Saved V6411_2021_305.csv
+
+  2021.306  [17:29:23]
+    Saved V6411_2021_306.csv
+
+  2021.307  [17:29:49]
+    Saved V6411_2021_307.csv
+
+  2021.308  [17:30:15]
+    Saved V6411_2021_308.csv
+
+  2021.309  [17:30:31]
+    Saved V6411_2021_309.csv
+
+  2021.310  [17:30:52]
+    Saved V6411_2021_310.csv
+
+  2021.311  [17:31:12]
+    Saved V6411_2021_311.csv
+
+  2021.312  [17:31:36]
+    Saved V6411_2021_312.csv
+
+  2021.313  [17:32:05]
+    Saved V6411_2021_313.csv
+
+  2021.314  [17:32:25]
+    Saved V6411_2021_314.csv
+
+  2021.315  [17:32:44]
+    Saved V6411_2021_315.csv
+
+  2021.316  [17:32:55]
+    Saved V6411_2021_316.csv
+
+  2021.317  [17:33:08]
+    Saved V6411_2021_317.csv
+
+  2021.318  [17:33:25]
+    Saved V6411_2021_318.csv
+
+All days done: 17:33:34
+Station: V6411
+Starting time: 17:33:38
+Found 30 per-day CSV(s)
+  V6411_2021_289.csv: 1438 windows
+  V6411_2021_290.csv: 1440 windows
+  V6411_2021_291.csv: 1440 windows
+  V6411_2021_292.csv: 1440 windows
+  V6411_2021_293.csv: 1440 windows
+  V6411_2021_294.csv: 1440 windows
+  V6411_2021_295.csv: 1440 windows
+  V6411_2021_296.csv: 1440 windows
+  V6411_2021_297.csv: 1440 windows
+  V6411_2021_298.csv: 1440 windows
+  V6411_2021_299.csv: 1440 windows
+  V6411_2021_300.csv: 1440 windows
+  V6411_2021_301.csv: 1440 windows
+  V6411_2021_302.csv: 1440 windows
+  V6411_2021_303.csv: 1440 windows
+  V6411_2021_304.csv: 1440 windows
+  V6411_2021_305.csv: 1440 windows
+  V6411_2021_306.csv: 1440 windows
+  V6411_2021_307.csv: 1440 windows
+  V6411_2021_308.csv: 1440 windows
+  V6411_2021_309.csv: 1440 windows
+  V6411_2021_310.csv: 1440 windows
+  V6411_2021_311.csv: 1440 windows
+  V6411_2021_312.csv: 1440 windows
+  V6411_2021_313.csv: 1440 windows
+  V6411_2021_314.csv: 1440 windows
+  V6411_2021_315.csv: 1440 windows
+  V6411_2021_316.csv: 1440 windows
+  V6411_2021_317.csv: 1440 windows
+  V6411_2021_318.csv: 1048 windows
+
+Total windows: 42806
+Combined CSV saved to /srv/beegfs/scratch/users/c/cabrerap/hvsr_output/combined/V6411_WR.csv
+
+Statistical Summary:
+--------------------
+<pandas.io.formats.style.Styler object at 0x149e8b2d7af0>
+Figure saved to /srv/beegfs/scratch/users/c/cabrerap/hvsr_output/combined/V6411_WR_single_panel.png
+
+Done: 17:34:45

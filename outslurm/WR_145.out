@@ -1,0 +1,61 @@
+Processing row 145: station V7236,38.42136633,14.95498038,5.21743
+Traceback (most recent call last):
+  File "/home/users/c/cabrerap/HVSR/hvsr_oneday.py", line 20, in <module>
+    import hvsrpy
+  File "/home/users/c/cabrerap/.conda/envs/hvsr/lib/python3.9/site-packages/hvsrpy/__init__.py", line 28, in <module>
+    from .data_wrangler import read, read_single
+  File "/home/users/c/cabrerap/.conda/envs/hvsr/lib/python3.9/site-packages/hvsrpy/data_wrangler.py", line 26, in <module>
+    import obspy
+  File "/home/users/c/cabrerap/.conda/envs/hvsr/lib/python3.9/site-packages/obspy/__init__.py", line 33, in <module>
+    from obspy.core.utcdatetime import UTCDateTime  # NOQA
+  File "/home/users/c/cabrerap/.conda/envs/hvsr/lib/python3.9/site-packages/obspy/core/__init__.py", line 120, in <module>
+    from obspy.core.utcdatetime import UTCDateTime  # NOQA
+  File "/home/users/c/cabrerap/.conda/envs/hvsr/lib/python3.9/site-packages/obspy/core/utcdatetime.py", line 21, in <module>
+    from obspy.core.util.deprecation_helpers import ObsPyDeprecationWarning
+  File "/home/users/c/cabrerap/.conda/envs/hvsr/lib/python3.9/site-packages/obspy/core/util/__init__.py", line 22, in <module>
+    from obspy.core.util.base import (ALL_MODULES, DEFAULT_MODULES,
+  File "/home/users/c/cabrerap/.conda/envs/hvsr/lib/python3.9/site-packages/obspy/core/util/base.py", line 366, in <module>
+    CARTOPY_VERSION = get_dependency_version('cartopy')
+  File "/home/users/c/cabrerap/.conda/envs/hvsr/lib/python3.9/site-packages/obspy/core/util/base.py", line 353, in get_dependency_version
+    version_string = pkg_resources.get_distribution(package_name).version
+  File "/home/users/c/cabrerap/.conda/envs/hvsr/lib/python3.9/site-packages/pkg_resources/__init__.py", line 534, in get_distribution
+    dist = get_provider(dist)
+  File "/home/users/c/cabrerap/.conda/envs/hvsr/lib/python3.9/site-packages/pkg_resources/__init__.py", line 417, in get_provider
+    return working_set.find(moduleOrReq) or require(str(moduleOrReq))[0]
+  File "/home/users/c/cabrerap/.conda/envs/hvsr/lib/python3.9/site-packages/pkg_resources/__init__.py", line 1070, in require
+    needed = self.resolve(parse_requirements(requirements))
+  File "/home/users/c/cabrerap/.conda/envs/hvsr/lib/python3.9/site-packages/pkg_resources/__init__.py", line 897, in resolve
+    dist = self._resolve_dist(
+  File "/home/users/c/cabrerap/.conda/envs/hvsr/lib/python3.9/site-packages/pkg_resources/__init__.py", line 926, in _resolve_dist
+    env = Environment(self.entries)
+  File "/home/users/c/cabrerap/.conda/envs/hvsr/lib/python3.9/site-packages/pkg_resources/__init__.py", line 1170, in __init__
+    self.scan(search_path)
+  File "/home/users/c/cabrerap/.conda/envs/hvsr/lib/python3.9/site-packages/pkg_resources/__init__.py", line 1202, in scan
+    for dist in find_distributions(item):
+  File "/home/users/c/cabrerap/.conda/envs/hvsr/lib/python3.9/site-packages/pkg_resources/__init__.py", line 2343, in find_on_path
+    yield from factory(fullpath)
+  File "/home/users/c/cabrerap/.conda/envs/hvsr/lib/python3.9/site-packages/pkg_resources/__init__.py", line 2407, in distributions_from_metadata
+    yield Distribution.from_location(
+  File "/home/users/c/cabrerap/.conda/envs/hvsr/lib/python3.9/site-packages/pkg_resources/__init__.py", line 2949, in from_location
+    return cls(
+  File "/home/users/c/cabrerap/.conda/envs/hvsr/lib/python3.9/site-packages/pkg_resources/__init__.py", line 3377, in _reload_version
+    md_version = self._get_version()
+  File "/home/users/c/cabrerap/.conda/envs/hvsr/lib/python3.9/site-packages/pkg_resources/__init__.py", line 3143, in _get_version
+    return _version_from_file(lines)
+  File "/home/users/c/cabrerap/.conda/envs/hvsr/lib/python3.9/site-packages/pkg_resources/__init__.py", line 2902, in _version_from_file
+    line = next(iter(version_lines), '')
+  File "/home/users/c/cabrerap/.conda/envs/hvsr/lib/python3.9/site-packages/pkg_resources/__init__.py", line 3139, in _get_metadata
+    yield from self.get_metadata_lines(name)
+  File "/home/users/c/cabrerap/.conda/envs/hvsr/lib/python3.9/site-packages/pkg_resources/__init__.py", line 1711, in get_metadata_lines
+    return yield_lines(self.get_metadata(name))
+  File "/home/users/c/cabrerap/.conda/envs/hvsr/lib/python3.9/site-packages/pkg_resources/__init__.py", line 1701, in get_metadata
+    value = self._get(path)
+  File "/home/users/c/cabrerap/.conda/envs/hvsr/lib/python3.9/site-packages/pkg_resources/__init__.py", line 1917, in _get
+    with open(path, 'rb') as stream:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/users/c/cabrerap/.conda/envs/hvsr/lib/python3.9/site-packages/setuptools-75.1.0-py3.12.egg-info/PKG-INFO'
+Station: V7236
+Starting time: 17:22:52
+Traceback (most recent call last):
+  File "/home/users/c/cabrerap/HVSR/hvsr_combine.py", line 34, in <module>
+    raise FileNotFoundError(f"No per-day CSVs found in {perday_dir}")
+FileNotFoundError: No per-day CSVs found in /srv/beegfs/scratch/users/c/cabrerap/hvsr_output/perday/V7236

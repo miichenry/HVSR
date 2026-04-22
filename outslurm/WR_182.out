@@ -1,0 +1,139 @@
+Processing row 182: station W7168,38.39893733,14.95051273,74.9509
+Station: W7168
+Starting time: 17:22:50
+Days with complete data: 30
+
+  2021.289  [17:22:50]
+    Saved W7168_2021_289.csv
+
+  2021.290  [17:23:11]
+    Saved W7168_2021_290.csv
+
+  2021.291  [17:23:24]
+    Saved W7168_2021_291.csv
+
+  2021.292  [17:23:42]
+    Saved W7168_2021_292.csv
+
+  2021.293  [17:23:57]
+    Saved W7168_2021_293.csv
+
+  2021.294  [17:24:12]
+    Saved W7168_2021_294.csv
+
+  2021.295  [17:24:28]
+    Saved W7168_2021_295.csv
+
+  2021.296  [17:24:47]
+    Saved W7168_2021_296.csv
+
+  2021.297  [17:25:06]
+    Saved W7168_2021_297.csv
+
+  2021.298  [17:25:24]
+    Saved W7168_2021_298.csv
+
+  2021.299  [17:25:42]
+    Saved W7168_2021_299.csv
+
+  2021.300  [17:25:59]
+    Saved W7168_2021_300.csv
+
+  2021.301  [17:26:19]
+    Saved W7168_2021_301.csv
+
+  2021.302  [17:26:38]
+    Saved W7168_2021_302.csv
+
+  2021.303  [17:26:54]
+    Saved W7168_2021_303.csv
+
+  2021.304  [17:27:14]
+    Saved W7168_2021_304.csv
+
+  2021.305  [17:27:33]
+    Saved W7168_2021_305.csv
+
+  2021.306  [17:27:52]
+    Saved W7168_2021_306.csv
+
+  2021.307  [17:28:11]
+    Saved W7168_2021_307.csv
+
+  2021.308  [17:28:34]
+    Saved W7168_2021_308.csv
+
+  2021.309  [17:28:55]
+    Saved W7168_2021_309.csv
+
+  2021.310  [17:29:15]
+    Saved W7168_2021_310.csv
+
+  2021.311  [17:29:31]
+    Saved W7168_2021_311.csv
+
+  2021.312  [17:29:49]
+    Saved W7168_2021_312.csv
+
+  2021.313  [17:30:10]
+    Saved W7168_2021_313.csv
+
+  2021.314  [17:30:25]
+    Saved W7168_2021_314.csv
+
+  2021.315  [17:30:46]
+    Saved W7168_2021_315.csv
+
+  2021.316  [17:31:02]
+    Saved W7168_2021_316.csv
+
+  2021.317  [17:31:18]
+    Saved W7168_2021_317.csv
+
+  2021.318  [17:31:36]
+    Saved W7168_2021_318.csv
+
+All days done: 17:31:51
+Station: W7168
+Starting time: 17:31:54
+Found 30 per-day CSV(s)
+  W7168_2021_289.csv: 1438 windows
+  W7168_2021_290.csv: 1440 windows
+  W7168_2021_291.csv: 1440 windows
+  W7168_2021_292.csv: 1440 windows
+  W7168_2021_293.csv: 1440 windows
+  W7168_2021_294.csv: 1440 windows
+  W7168_2021_295.csv: 1440 windows
+  W7168_2021_296.csv: 1440 windows
+  W7168_2021_297.csv: 1440 windows
+  W7168_2021_298.csv: 1440 windows
+  W7168_2021_299.csv: 1440 windows
+  W7168_2021_300.csv: 1440 windows
+  W7168_2021_301.csv: 1440 windows
+  W7168_2021_302.csv: 1440 windows
+  W7168_2021_303.csv: 1440 windows
+  W7168_2021_304.csv: 1440 windows
+  W7168_2021_305.csv: 1440 windows
+  W7168_2021_306.csv: 1440 windows
+  W7168_2021_307.csv: 1440 windows
+  W7168_2021_308.csv: 1440 windows
+  W7168_2021_309.csv: 1440 windows
+  W7168_2021_310.csv: 1440 windows
+  W7168_2021_311.csv: 1440 windows
+  W7168_2021_312.csv: 1440 windows
+  W7168_2021_313.csv: 1440 windows
+  W7168_2021_314.csv: 1440 windows
+  W7168_2021_315.csv: 1440 windows
+  W7168_2021_316.csv: 1440 windows
+  W7168_2021_317.csv: 1440 windows
+  W7168_2021_318.csv: 945 windows
+
+Total windows: 42703
+Combined CSV saved to /srv/beegfs/scratch/users/c/cabrerap/hvsr_output/combined/W7168_WR.csv
+
+Statistical Summary:
+--------------------
+<pandas.io.formats.style.Styler object at 0x14b589438af0>
+Figure saved to /srv/beegfs/scratch/users/c/cabrerap/hvsr_output/combined/W7168_WR_single_panel.png
+
+Done: 17:33:06

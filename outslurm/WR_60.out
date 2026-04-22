@@ -1,0 +1,143 @@
+Processing row 60: station V6441,38.39747758,14.94599023,153.285
+Station: V6441
+Starting time: 17:22:33
+Days with complete data: 31
+
+  2021.289  [17:22:33]
+    Saved V6441_2021_289.csv
+
+  2021.290  [17:22:51]
+    Saved V6441_2021_290.csv
+
+  2021.291  [17:23:23]
+    Saved V6441_2021_291.csv
+
+  2021.292  [17:23:46]
+    Saved V6441_2021_292.csv
+
+  2021.293  [17:24:07]
+    Saved V6441_2021_293.csv
+
+  2021.294  [17:24:31]
+    Saved V6441_2021_294.csv
+
+  2021.295  [17:24:57]
+    Saved V6441_2021_295.csv
+
+  2021.296  [17:25:18]
+    Saved V6441_2021_296.csv
+
+  2021.297  [17:25:46]
+    Saved V6441_2021_297.csv
+
+  2021.298  [17:26:14]
+    Saved V6441_2021_298.csv
+
+  2021.299  [17:26:43]
+    Saved V6441_2021_299.csv
+
+  2021.300  [17:27:09]
+    Saved V6441_2021_300.csv
+
+  2021.301  [17:27:30]
+    Saved V6441_2021_301.csv
+
+  2021.302  [17:27:52]
+    Saved V6441_2021_302.csv
+
+  2021.303  [17:28:22]
+    Saved V6441_2021_303.csv
+
+  2021.304  [17:28:50]
+    Saved V6441_2021_304.csv
+
+  2021.305  [17:29:17]
+    Saved V6441_2021_305.csv
+
+  2021.306  [17:29:37]
+    Saved V6441_2021_306.csv
+
+  2021.307  [17:30:00]
+    Saved V6441_2021_307.csv
+
+  2021.308  [17:30:27]
+    Saved V6441_2021_308.csv
+
+  2021.309  [17:30:53]
+    Saved V6441_2021_309.csv
+
+  2021.310  [17:31:16]
+    Saved V6441_2021_310.csv
+
+  2021.311  [17:31:40]
+    Saved V6441_2021_311.csv
+
+  2021.312  [17:32:06]
+    Saved V6441_2021_312.csv
+
+  2021.313  [17:32:25]
+    Saved V6441_2021_313.csv
+
+  2021.314  [17:32:44]
+    Saved V6441_2021_314.csv
+
+  2021.315  [17:32:55]
+    Saved V6441_2021_315.csv
+
+  2021.316  [17:33:08]
+    Saved V6441_2021_316.csv
+
+  2021.317  [17:33:25]
+    Saved V6441_2021_317.csv
+
+  2021.318  [17:33:38]
+    Saved V6441_2021_318.csv
+
+  2021.319  [17:33:50]
+    Saved V6441_2021_319.csv
+
+All days done: 17:33:53
+Station: V6441
+Starting time: 17:33:57
+Found 31 per-day CSV(s)
+  V6441_2021_289.csv: 1438 windows
+  V6441_2021_290.csv: 1440 windows
+  V6441_2021_291.csv: 1440 windows
+  V6441_2021_292.csv: 1440 windows
+  V6441_2021_293.csv: 1440 windows
+  V6441_2021_294.csv: 1440 windows
+  V6441_2021_295.csv: 1440 windows
+  V6441_2021_296.csv: 1440 windows
+  V6441_2021_297.csv: 1440 windows
+  V6441_2021_298.csv: 1440 windows
+  V6441_2021_299.csv: 1440 windows
+  V6441_2021_300.csv: 1440 windows
+  V6441_2021_301.csv: 1440 windows
+  V6441_2021_302.csv: 1440 windows
+  V6441_2021_303.csv: 1440 windows
+  V6441_2021_304.csv: 1440 windows
+  V6441_2021_305.csv: 1440 windows
+  V6441_2021_306.csv: 1440 windows
+  V6441_2021_307.csv: 1440 windows
+  V6441_2021_308.csv: 1440 windows
+  V6441_2021_309.csv: 1440 windows
+  V6441_2021_310.csv: 1440 windows
+  V6441_2021_311.csv: 1440 windows
+  V6441_2021_312.csv: 1440 windows
+  V6441_2021_313.csv: 1440 windows
+  V6441_2021_314.csv: 1440 windows
+  V6441_2021_315.csv: 1440 windows
+  V6441_2021_316.csv: 1440 windows
+  V6441_2021_317.csv: 1440 windows
+  V6441_2021_318.csv: 1440 windows
+  V6441_2021_319.csv: 234 windows
+
+Total windows: 43432
+Combined CSV saved to /srv/beegfs/scratch/users/c/cabrerap/hvsr_output/combined/V6441_WR.csv
+
+Statistical Summary:
+--------------------
+<pandas.io.formats.style.Styler object at 0x1515108d6af0>
+Figure saved to /srv/beegfs/scratch/users/c/cabrerap/hvsr_output/combined/V6441_WR_single_panel.png
+
+Done: 17:34:59

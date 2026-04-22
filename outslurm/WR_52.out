@@ -1,0 +1,133 @@
+Processing row 52: station V6389,38.39031864,14.98806649,382.761
+Station: V6389
+Starting time: 17:22:33
+Days with complete data: 29
+
+  2021.289  [17:22:33]
+    ERROR on 2021.289: 'utf-8' codec can't decode byte 0xe5 in position 21: invalid continuation byte
+
+  2021.290  [17:22:40]
+    Saved V6389_2021_290.csv
+
+  2021.291  [17:22:55]
+    Saved V6389_2021_291.csv
+
+  2021.292  [17:23:21]
+    Saved V6389_2021_292.csv
+
+  2021.293  [17:23:52]
+    Saved V6389_2021_293.csv
+
+  2021.294  [17:24:19]
+    Saved V6389_2021_294.csv
+
+  2021.295  [17:24:49]
+    Saved V6389_2021_295.csv
+
+  2021.296  [17:25:18]
+    Saved V6389_2021_296.csv
+
+  2021.297  [17:25:49]
+    Saved V6389_2021_297.csv
+
+  2021.298  [17:26:16]
+    Saved V6389_2021_298.csv
+
+  2021.299  [17:26:47]
+    Saved V6389_2021_299.csv
+
+  2021.300  [17:27:21]
+    Saved V6389_2021_300.csv
+
+  2021.301  [17:27:52]
+    Saved V6389_2021_301.csv
+
+  2021.302  [17:28:23]
+    Saved V6389_2021_302.csv
+
+  2021.303  [17:28:51]
+    Saved V6389_2021_303.csv
+
+  2021.304  [17:29:21]
+    Saved V6389_2021_304.csv
+
+  2021.305  [17:29:48]
+    Saved V6389_2021_305.csv
+
+  2021.306  [17:30:20]
+    Saved V6389_2021_306.csv
+
+  2021.307  [17:30:47]
+    Saved V6389_2021_307.csv
+
+  2021.308  [17:31:13]
+    Saved V6389_2021_308.csv
+
+  2021.309  [17:31:35]
+    Saved V6389_2021_309.csv
+
+  2021.310  [17:32:03]
+    Saved V6389_2021_310.csv
+
+  2021.311  [17:32:20]
+    Saved V6389_2021_311.csv
+
+  2021.312  [17:32:33]
+    Saved V6389_2021_312.csv
+
+  2021.313  [17:32:49]
+    Saved V6389_2021_313.csv
+
+  2021.314  [17:33:09]
+    ERROR on 2021.314: 'utf-8' codec can't decode byte 0xe5 in position 21: invalid continuation byte
+
+  2021.315  [17:33:16]
+    Saved V6389_2021_315.csv
+
+  2021.316  [17:33:27]
+    Saved V6389_2021_316.csv
+
+  2021.317  [17:33:42]
+    Saved V6389_2021_317.csv
+
+All days done: 17:33:53
+Station: V6389
+Starting time: 17:33:57
+Found 27 per-day CSV(s)
+  V6389_2021_290.csv: 1440 windows
+  V6389_2021_291.csv: 1440 windows
+  V6389_2021_292.csv: 1440 windows
+  V6389_2021_293.csv: 1440 windows
+  V6389_2021_294.csv: 1440 windows
+  V6389_2021_295.csv: 1440 windows
+  V6389_2021_296.csv: 1440 windows
+  V6389_2021_297.csv: 1440 windows
+  V6389_2021_298.csv: 1440 windows
+  V6389_2021_299.csv: 1440 windows
+  V6389_2021_300.csv: 1440 windows
+  V6389_2021_301.csv: 1440 windows
+  V6389_2021_302.csv: 1440 windows
+  V6389_2021_303.csv: 1440 windows
+  V6389_2021_304.csv: 1440 windows
+  V6389_2021_305.csv: 1440 windows
+  V6389_2021_306.csv: 1440 windows
+  V6389_2021_307.csv: 1440 windows
+  V6389_2021_308.csv: 1440 windows
+  V6389_2021_309.csv: 1440 windows
+  V6389_2021_310.csv: 1440 windows
+  V6389_2021_311.csv: 1440 windows
+  V6389_2021_312.csv: 1440 windows
+  V6389_2021_313.csv: 1440 windows
+  V6389_2021_315.csv: 1440 windows
+  V6389_2021_316.csv: 1440 windows
+  V6389_2021_317.csv: 1342 windows
+
+Total windows: 38782
+Combined CSV saved to /srv/beegfs/scratch/users/c/cabrerap/hvsr_output/combined/V6389_WR.csv
+
+Statistical Summary:
+--------------------
+<pandas.io.formats.style.Styler object at 0x1530027913a0>
+Figure saved to /srv/beegfs/scratch/users/c/cabrerap/hvsr_output/combined/V6389_WR_single_panel.png
+
+Done: 17:34:50

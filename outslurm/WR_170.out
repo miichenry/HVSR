@@ -1,0 +1,13 @@
+Processing row 170: station V7362,38.39059237,14.99117251,386.434
+Station: V7362
+Starting time: 17:22:51
+Traceback (most recent call last):
+  File "/home/users/c/cabrerap/HVSR/hvsr_oneday.py", line 36, in <module>
+    raise FileNotFoundError(f"Station directory not found: {sta_path}")
+FileNotFoundError: Station directory not found: /srv/beegfs/scratch/shares/cdff/VulcaNODES/2021/VN/V7362
+Station: V7362
+Starting time: 17:22:54
+Traceback (most recent call last):
+  File "/home/users/c/cabrerap/HVSR/hvsr_combine.py", line 34, in <module>
+    raise FileNotFoundError(f"No per-day CSVs found in {perday_dir}")
+FileNotFoundError: No per-day CSVs found in /srv/beegfs/scratch/users/c/cabrerap/hvsr_output/perday/V7362

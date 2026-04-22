@@ -1,0 +1,25 @@
+Processing row 131: station V7188,38.39477785,14.96237348,172.588
+Traceback (most recent call last):
+  File "/home/users/c/cabrerap/HVSR/hvsr_oneday.py", line 18, in <module>
+    import matplotlib.pyplot as plt
+  File "/home/users/c/cabrerap/.conda/envs/hvsr/lib/python3.9/site-packages/matplotlib/pyplot.py", line 58, in <module>
+    from matplotlib import (  # noqa: F401 Re-exported for typing.
+  File "/home/users/c/cabrerap/.conda/envs/hvsr/lib/python3.9/site-packages/matplotlib/style/__init__.py", line 1, in <module>
+    from .core import available, context, library, reload_library, use
+  File "/home/users/c/cabrerap/.conda/envs/hvsr/lib/python3.9/site-packages/matplotlib/style/core.py", line 233, in <module>
+    _base_library = read_style_directory(BASE_LIBRARY_PATH)
+  File "/home/users/c/cabrerap/.conda/envs/hvsr/lib/python3.9/site-packages/matplotlib/style/core.py", line 211, in read_style_directory
+    styles[path.stem] = _rc_params_in_file(path)
+  File "/home/users/c/cabrerap/.conda/envs/hvsr/lib/python3.9/site-packages/matplotlib/__init__.py", line 870, in _rc_params_in_file
+    with _open_file_or_url(fname) as fd:
+  File "/home/users/c/cabrerap/.conda/envs/hvsr/lib/python3.9/contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "/home/users/c/cabrerap/.conda/envs/hvsr/lib/python3.9/site-packages/matplotlib/__init__.py", line 847, in _open_file_or_url
+    with open(fname, encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/users/c/cabrerap/.conda/envs/hvsr/lib/python3.9/site-packages/matplotlib/mpl-data/stylelib/seaborn-v0_8-dark-palette.mplstyle'
+Station: V7188
+Starting time: 17:22:52
+Traceback (most recent call last):
+  File "/home/users/c/cabrerap/HVSR/hvsr_combine.py", line 34, in <module>
+    raise FileNotFoundError(f"No per-day CSVs found in {perday_dir}")
+FileNotFoundError: No per-day CSVs found in /srv/beegfs/scratch/users/c/cabrerap/hvsr_output/perday/V7188
