@@ -36,7 +36,7 @@ import hvsrpy
 from pathlib import Path
 
 # ── Paths ─────────────────────────────────────────────────────────────────────
-output_dir   = Path("/srv/beegfs/scratch/users/h/henrymi/vulcano/output_test")
+output_dir = Path("/srv/beegfs/scratch/users/c/cabrerap/hvsr_output")
 combined_dir = output_dir / "combined"
 hist_dir     = output_dir / "fn_qc_histograms"
 hvsr_approved_dir = output_dir / "fn_qc_hvsr" / "approved"
@@ -45,7 +45,7 @@ for d in (hist_dir, hvsr_approved_dir, hvsr_rejected_dir):
     d.mkdir(parents=True, exist_ok=True)
 
 stations_csv = Path(sys.argv[1]) if len(sys.argv) > 1 else \
-               Path("/home/users/h/henrymi/jectpro/vulcano/vulcano_stations.csv")
+               Path("vulcano_stations.csv")
 
 # ── Quality thresholds (σ_ln units) ──────────────────────────────────────────
 # σ_ln  →  half-spread in octaves (σ_ln / ln2)

@@ -18,13 +18,13 @@ import numpy as np
 import hvsrpy
 from pathlib import Path
 
-output_dir  = Path("/srv/beegfs/scratch/users/h/henrymi/vulcano/output_test")
+output_dir = Path("/srv/beegfs/scratch/users/c/cabrerap/hvsr_output")
 combined_dir = output_dir / "combined"
 summary_dir  = output_dir / "summary"
 summary_dir.mkdir(exist_ok=True)
 
 stations_csv = Path(sys.argv[1]) if len(sys.argv) > 1 else \
-               Path("/home/users/h/henrymi/jectpro/vulcano/vulcano_stations.csv")
+               Path("vulcano_stations.csv")
 
 # Load station coordinates keyed by station name
 coords = {}

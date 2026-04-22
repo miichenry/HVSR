@@ -18,7 +18,7 @@ import os
 from pathlib import Path
 
 # ── I/O ──────────────────────────────────────────────────────────────────────
-output_dir   = Path("/srv/beegfs/scratch/users/h/henrymi/vulcano/output_test")
+output_dir = Path("/srv/beegfs/scratch/users/c/cabrerap/hvsr_output")
 summary_csv  = output_dir / "stations_fn_summary.csv"
 output_fig   = output_dir / "map_fn_hz.png"
 
