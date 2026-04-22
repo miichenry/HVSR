@@ -13,8 +13,8 @@ import sys
 plt.style.use(hvsrpy.HVSRPY_MPL_STYLE)
 
 sta = sys.argv[1].split(',')[0]
-base_path = Path("/srv/beegfs/scratch/users/h/henrymi/vulcano/miniseed_all")
-output_dir = Path("/srv/beegfs/scratch/users/h/henrymi/vulcano/output_test")
+base_path = Path("/srv/beegfs/scratch/shares/cdff/VulcaNODES/2021/VN")
+output_dir = Path("/srv/beegfs/scratch/users/c/cabrerap/hvsr_output")
 
 # Maximum number of days loaded into memory at once.
 # Reduce to 1 if individual daily files are very large (> ~1 GB each).
@@ -23,7 +23,7 @@ BATCH_SIZE = 3
 print(f"Station: {sta}")
 print(f"Starting time: {datetime.now().strftime('%H:%M:%S')}")
 
-sta_path = base_path #base_path / sta
+sta_path = base_path / sta
 if not sta_path.exists():
     raise FileNotFoundError(f"Station directory not found: {sta_path}")
 

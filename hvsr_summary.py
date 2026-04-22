@@ -3,12 +3,12 @@
 For each station found in <combined_dir>:
   - Writes a simplified CSV: frequency | mean_curve | mean_curve_plus_1std
 
-Writes one global CSV: station | lat | lon | elev | fn_hz | fn_amplitude
+Writes one global CSV: station | Y | X | Z | fn_hz | fn_amplitude
 
 Usage:
     python hvsr_summary.py [stations_csv]
 
-    stations_csv : optional path to stations CSV (station,lat,lon,elev, no header)
+    stations_csv : optional path to stations CSV (station,Y,X,Z, no header)
                    default: /home/users/h/henrymi/jectpro/vulcano/vulcano_stations.csv
 """
 
@@ -66,15 +66,15 @@ for csv_path in combined_csvs:
     except ValueError:
         fn_hz, fn_amp = np.nan, np.nan
 
-    lat, lon, elev = coords.get(sta, (np.nan, np.nan, np.nan))
-    global_rows.append([sta, lat, lon, elev, fn_hz, fn_amp])
+    Y, X, Z = coords.get(sta, (np.nan, np.nan, np.nan))
+    global_rows.append([sta, Y, X, Z, fn_hz, fn_amp])
     print(f"fn={fn_hz:.3f} Hz")
 
 # Global CSV
 global_csv = output_dir / "stations_fn_summary.csv"
 with open(global_csv, "w", newline="") as f:
     w = csv.writer(f)
-    w.writerow(["station", "lat", "lon", "elev", "fn_hz", "fn_amplitude"])
+    w.writerow(["station", "Y", "X", "Z", "fn_hz", "fn_amplitude"])
     for row in global_rows:
         w.writerow([row[0],
                     f"{row[1]:.8f}", f"{row[2]:.8f}", f"{row[3]:.4f}",
