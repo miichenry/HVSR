@@ -70,15 +70,4 @@ for csv_path in combined_csvs:
     global_rows.append([sta, Y, X, Z, fn_hz, fn_amp])
     print(f"fn={fn_hz:.3f} Hz")
 
-# Global CSV
-global_csv = output_dir / "stations_fn_summary.csv"
-with open(global_csv, "w", newline="") as f:
-    w = csv.writer(f)
-    w.writerow(["station", "Y", "X", "Z", "fn_hz", "fn_amplitude"])
-    for row in global_rows:
-        w.writerow([row[0],
-                    f"{row[1]:.8f}", f"{row[2]:.8f}", f"{row[3]:.4f}",
-                    f"{row[4]:.4f}", f"{row[5]:.4f}"])
-
-print(f"\nGlobal summary saved to {global_csv}")
 print(f"Per-station curves saved to {summary_dir}/")
