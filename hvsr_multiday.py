@@ -13,8 +13,8 @@ import sys
 plt.style.use(hvsrpy.HVSRPY_MPL_STYLE)
 
 sta = sys.argv[1].split(',')[0]
-base_path = Path("/srv/beegfs/scratch/shares/cdff/VulcaNODES/2021/VN")
-output_dir = Path("/srv/beegfs/scratch/users/h/henrymi/vulcano/hvsr_output")
+base_path = Path("/srv/beegfs/scratch/users/h/henrymi/vulcano/miniseed_all")
+output_dir = Path("/srv/beegfs/scratch/users/h/henrymi/vulcano/output_test")
 
 # Maximum number of days loaded into memory at once.
 # Reduce to 1 if individual daily files are very large (> ~1 GB each).
@@ -23,7 +23,7 @@ BATCH_SIZE = 3
 print(f"Station: {sta}")
 print(f"Starting time: {datetime.now().strftime('%H:%M:%S')}")
 
-sta_path = base_path / sta
+sta_path = base_path #base_path / sta
 if not sta_path.exists():
     raise FileNotFoundError(f"Station directory not found: {sta_path}")
 
@@ -105,23 +105,19 @@ for batch_start in range(0, len(all_fnames), BATCH_SIZE):
 
 print(f"\nAll batches done: {datetime.now().strftime('%H:%M:%S')}")
 
-# Merge HVSR windows from all batches by concatenating the amplitude arrays.
-# frq is identical across batches (same processing settings), so take it once.
-hvsr = hvsr_batches[0]
-if len(hvsr_batches) > 1:
-    combined_amp = np.concatenate([h.amp for h in hvsr_batches], axis=0)
-    hvsr.amp = combined_amp
+# Merge HVSR windows from all batches.
+# HvsrTraditional stores windows as .amplitude (shape: [n_windows, n_freqs])
+# and .frequency. Re-construct via the constructor so all internal state
+# (valid_window_boolean_mask, peak arrays, n_curves) is initialised cleanly.
+combined_amplitude = np.concatenate([h.amplitude for h in hvsr_batches], axis=0)
+hvsr = hvsrpy.HvsrTraditional(hvsr_batches[0].frequency, combined_amplitude,
+                               meta=hvsr_batches[0].meta)
 
-# Merge preprocessed records for the rejection plot
-if len(srecords_preprocessed_all) > 1:
-    srecords_preprocessed = srecords_preprocessed_all[0]
-    for sp in srecords_preprocessed_all[1:]:
-        # HvsrPreProcessed stores windowed records; extend the internal list
-        srecords_preprocessed.timeseriesmatrix = np.concatenate(
-            [srecords_preprocessed.timeseriesmatrix, sp.timeseriesmatrix], axis=0
-        )
-else:
-    srecords_preprocessed = srecords_preprocessed_all[0]
+# Merge preprocessed records for the rejection plot.
+# preprocess() returns a list of SeismicRecording3C — plain list concatenation.
+srecords_preprocessed = []
+for sp in srecords_preprocessed_all:
+    srecords_preprocessed.extend(sp)
 
 n = 2
 search_range_in_hz = (None, None)

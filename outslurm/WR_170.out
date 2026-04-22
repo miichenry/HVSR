@@ -1,9 +1,0 @@
-Processing row 170: station V7362,38.39059237,14.99117251,386.434
-station:V7362
-length:5
-Starting time: 14:05:37
-[]
-Traceback (most recent call last):
-  File "/home/users/h/henrymi/HVSR/hvsr_window_rejection.py", line 35, in <module>
-    check_is_string(Z[0], "Z")
-IndexError: list index out of range
