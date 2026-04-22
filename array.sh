@@ -18,5 +18,6 @@ sfile=$(awk -F, "NR==$ROW {print \$0}" $fname)
 echo "Processing row $ROW: station $sfile"
 #python -u hvsr_DFA.py $sfile
 #python -u hvsr_window_rejection.py $sfile
-python -u hvsr_multiday.py  $sfile
+#python -u hvsr_multiday.py  $sfile
    
+python -u hvsr_oneday.py  $sfile
