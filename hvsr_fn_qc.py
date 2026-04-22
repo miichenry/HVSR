@@ -107,7 +107,7 @@ def _load_or_cache(csv_path, cache_path):
 
     # ── First run: parse full 264 MB CSV with pandas ──────────────────────────
     meta, n_cols = _read_header(csv_path)
-    print(f"    (cache miss — reading {csv_path.stat().st_size/1e6:.0f} MB CSV with pandas)")
+    #print(f"    (cache miss — reading {csv_path.stat().st_size/1e6:.0f} MB CSV with pandas)")
 
     # Read only freq (col 0) and last 2 cols (mean, std) — fast, low memory
     light = pd.read_csv(csv_path, comment="#", header=None,
