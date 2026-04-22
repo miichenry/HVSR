@@ -1,17 +1,17 @@
-Processing row 6: station 21109
-station:21109
+Processing row 6: station E6520,38.4065432,14.97432131,92.2828
+station:E6520
 length:5
-Starting time: 10:18:28
-['/srv/beegfs/scratch/shares/cdff/hautesorne/DATA_MSEED/01032024/453021109.2024.03.01.00.00.00.000.Z.miniseed']
+Starting time: 13:57:09
+['/srv/beegfs/scratch/users/h/henrymi/vulcano/miniseed/VN.E6520..DPZ.D.2021.291.00.00.00.000.mseed']
 All checks passed. Z, E, and N are valid lists of strings.
-[['/srv/beegfs/scratch/shares/cdff/hautesorne/DATA_MSEED/01032024/453021109.2024.03.01.00.00.00.000.Z.miniseed', '/srv/beegfs/scratch/shares/cdff/hautesorne/DATA_MSEED/01032024/453021109.2024.03.01.00.00.00.000.E.miniseed', '/srv/beegfs/scratch/shares/cdff/hautesorne/DATA_MSEED/01032024/453021109.2024.03.01.00.00.00.000.N.miniseed']]
+[['/srv/beegfs/scratch/users/h/henrymi/vulcano/miniseed/VN.E6520..DPZ.D.2021.291.00.00.00.000.mseed', '/srv/beegfs/scratch/users/h/henrymi/vulcano/miniseed/VN.E6520..DPE.D.2021.291.00.00.00.000.mseed', '/srv/beegfs/scratch/users/h/henrymi/vulcano/miniseed/VN.E6520..DPN.D.2021.291.00.00.00.000.mseed']]
 Number of recordings: 1
 All files exist. (n=1)
 Preprocessing Summary
 ------------------------------------------------------------
 hvsrpy_version                           : 2.0.0
 orient_to_degrees_from_north             : 0.0
-filter_corner_frequencies_in_hz          : (0.1, 30)
+filter_corner_frequencies_in_hz          : (0.2, 30)
 window_length_in_seconds                 : 30
 detrend                                  : constant
 ignore_dissimilar_time_step_warning      : False
@@ -28,12 +28,12 @@ fft_settings                             : None
 handle_dissimilar_time_steps_by          : frequency_domain_resampling
 processing_method                        : traditional
 method_to_combine_horizontals            : geometric_mean
-Start reading: 10:18:29
-End reading: 10:18:36
-Figure saved successfully to output/output_window_rejection_v13Nov/21109_WR.png!
-Results saved successfully to output/output_window_rejection_v13Nov/21109_WR.csv!
+Start reading: 13:57:09
+End reading: 13:57:21
+Figure saved successfully to /srv/beegfs/scratch/users/h/henrymi/vulcano/hvsr_output/output_WE_2.0E6520_WR.png!
+Results saved successfully to /srv/beegfs/scratch/users/h/henrymi/vulcano/hvsr_output/output_WE_2.0E6520_WR.csv!
 
 Statistical Summary:
 --------------------
-<pandas.io.formats.style.Styler object at 0x1481b07246d0>
-Figure saved successfully to output/output_window_rejection_v13Nov/21109_WR_single_panel.png!
+<pandas.io.formats.style.Styler object at 0x14e83fee0490>
+Figure saved successfully to /srv/beegfs/scratch/users/h/henrymi/vulcano/hvsr_output/output_WE_2.0E6520_WR_single_panel.png!

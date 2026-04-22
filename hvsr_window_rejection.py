@@ -1,18 +1,21 @@
 import pathlib
 import os
 import numpy as np
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from datetime import datetime
 import hvsrpy
 from hvsrpy import sesame
-
+from pathlib import Path
 import sys
 from glob import glob
 
 plt.style.use(hvsrpy.HVSRPY_MPL_STYLE)
 
-sta = sys.argv[1]
-path = os.path.join('/srv', 'beegfs', 'scratch', 'shares', 'cdff', 'hautesorne')
+sta = sys.argv[1].split(',')[0]
+path = Path("/srv/beegfs/scratch/users/h/henrymi/vulcano/miniseed")
+output_dir = Path("/srv/beegfs/scratch/users/h/henrymi/vulcano/hvsr_output")
 
 print(f"station:{sta}")
 print(f"length:{len(sta)}")
@@ -20,9 +23,9 @@ print(f"length:{len(sta)}")
 current_time = datetime.now().strftime('%H:%M:%S')
 print(f"Starting time: {current_time}")
 
-Z = glob(os.path.join(path, 'DATA_MSEED', '01032024', f'*{sta}*Z*'))
-E = glob(os.path.join(path, 'DATA_MSEED', '01032024', f'*{sta}*E*'))
-N = glob(os.path.join(path, 'DATA_MSEED', '01032024', f'*{sta}*N*'))
+Z = glob(os.path.join(path, f'*{sta}*DPZ*'))
+E = glob(os.path.join(path, f'*{sta}*DPE*'))
+N = glob(os.path.join(path, f'*{sta}*DPN*'))
 print(Z)
 def check_is_string(variable, name):
     if not isinstance(variable, str):
@@ -62,9 +65,9 @@ print(f"All files exist. (n={len(fnames)})")
 
 preprocessing_settings = hvsrpy.settings.HvsrPreProcessingSettings()
 preprocessing_settings.detrend = "constant"
-preprocessing_settings.window_length_in_seconds = 30
+preprocessing_settings.window_length_in_seconds = 60
 preprocessing_settings.orient_to_degrees_from_north = 0.0
-preprocessing_settings.filter_corner_frequencies_in_hz = (0.1, 30)
+preprocessing_settings.filter_corner_frequencies_in_hz = (0.2, 30)
 preprocessing_settings.ignore_dissimilar_time_step_warning = False
 
 print("Preprocessing Summary")
@@ -95,11 +98,11 @@ search_range_in_hz = (None, None)
 _ = hvsrpy.frequency_domain_window_rejection(hvsr, n=n, search_range_in_hz=search_range_in_hz)
 
 mfig, axs = hvsrpy.plot_pre_and_post_rejection(srecords_preprocessed, hvsr)
-plt.show()
+# plt.show()
 
 save_figure = True
 save_results = True
-output_dir = "output/output_window_rejection_v13Nov/"
+output_dir = os.path.join(output_dir, "output_WE_2.0/")
 fname_prefix = f"{output_dir}{sta}_WR"
 os.makedirs(output_dir, exist_ok=True)
 
@@ -121,7 +124,7 @@ hvsrpy.summarize_hvsr_statistics(hvsr)
 (sfig, ax) = hvsrpy.plot_single_panel_hvsr_curves(hvsr)
 ax.get_legend().remove()
 ax.legend(loc="center left", bbox_to_anchor=(1, 0.5))
-plt.show()
+# plt.show()
 
 if save_figure:
     fname = f"{fname_prefix}_single_panel.png"
