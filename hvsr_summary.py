@@ -2,14 +2,15 @@
 
 For each station found in <combined_dir>:
   - Writes a simplified CSV: frequency | mean_curve | mean_curve_plus_1std
+    (std is skipped for DFA when only 1 curve exists)
 
 Writes one global CSV: station | Y | X | Z | fn_hz | fn_amplitude
 
 Usage:
-    python hvsr_summary.py [stations_csv]
+    python hvsr_summary.py [method] [stations_csv]
 
-    stations_csv : optional path to stations CSV (station,Y,X,Z, no header)
-                   default: /home/users/h/henrymi/jectpro/vulcano/vulcano_stations.csv
+    method       : "traditional" (default) or "dfa"
+    stations_csv : path to stations CSV (station,Y,X,Z, no header)
 """
 
 import sys
@@ -18,15 +19,25 @@ import numpy as np
 import hvsrpy
 from pathlib import Path
 
-output_dir = Path("/srv/beegfs/scratch/users/c/cabrerap/hvsr_output")
-combined_dir = output_dir / "combined"
-summary_dir  = output_dir / "summary"
+args         = sys.argv[1:]
+method       = "traditional"
+stations_csv = Path("vulcano_stations.csv")
+
+for a in args:
+    if a in ("traditional", "dfa"):
+        method = a
+    else:
+        stations_csv = Path(a)
+
+output_dir   = Path("/srv/beegfs/scratch/users/c/cabrerap/hvsr_output")
+combined_dir = output_dir / f"combined_{method}"
+summary_dir  = output_dir / f"summary_{method}"
 summary_dir.mkdir(exist_ok=True)
 
-stations_csv = Path(sys.argv[1]) if len(sys.argv) > 1 else \
-               Path("vulcano_stations.csv")
+print(f"Method       : {method}")
+print(f"Combined dir : {combined_dir}")
 
-# Load station coordinates keyed by station name
+# ── Station coordinates ───────────────────────────────────────────────────────
 coords = {}
 if stations_csv.exists():
     with open(stations_csv) as f:
@@ -38,7 +49,7 @@ combined_csvs = sorted(combined_dir.glob("*_WR.csv"))
 if not combined_csvs:
     raise FileNotFoundError(f"No combined CSVs found in {combined_dir}")
 
-print(f"Found {len(combined_csvs)} station(s)")
+print(f"Found {len(combined_csvs)} station(s)\n")
 
 global_rows = []
 
@@ -48,9 +59,16 @@ for csv_path in combined_csvs:
 
     hvsr = hvsrpy.object_io.read_hvsr_object_from_file(str(csv_path))
 
-    freq      = hvsr.frequency
-    mean      = hvsr.mean_curve(distribution="lognormal")
-    plus_1std = hvsr.nth_std_curve(n=1, distribution="lognormal")
+    freq = hvsr.frequency
+    mean = hvsr.mean_curve(distribution="lognormal")
+
+    # std_curve requires > 1 window; for DFA combined it may be just ~30 days
+    try:
+        plus_1std = hvsr.nth_std_curve(n=1, distribution="lognormal")
+        has_std = True
+    except (ValueError, AttributeError):
+        plus_1std = np.full_like(mean, np.nan)
+        has_std = False
 
     # Per-station simplified CSV
     out_csv = summary_dir / f"{sta}_mean_curve.csv"
@@ -63,11 +81,22 @@ for csv_path in combined_csvs:
     # Peak of mean curve
     try:
         fn_hz, fn_amp = hvsr.mean_curve_peak(distribution="lognormal")
-    except ValueError:
+    except (ValueError, AttributeError):
         fn_hz, fn_amp = np.nan, np.nan
 
     Y, X, Z = coords.get(sta, (np.nan, np.nan, np.nan))
     global_rows.append([sta, Y, X, Z, fn_hz, fn_amp])
-    print(f"fn={fn_hz:.3f} Hz")
+    print(f"fn={fn_hz:.3f} Hz{'  (no std)' if not has_std else ''}")
 
+# ── Global CSV ────────────────────────────────────────────────────────────────
+global_csv = output_dir / f"stations_fn_summary_{method}.csv"
+with open(global_csv, "w", newline="") as f:
+    w = csv.writer(f)
+    w.writerow(["station", "Y", "X", "Z", "fn_hz", "fn_amplitude"])
+    for row in global_rows:
+        w.writerow([row[0],
+                    f"{row[1]:.8f}", f"{row[2]:.8f}", f"{row[3]:.4f}",
+                    f"{row[4]:.4f}", f"{row[5]:.4f}"])
+
+print(f"\nGlobal CSV saved to {global_csv}")
 print(f"Per-station curves saved to {summary_dir}/")

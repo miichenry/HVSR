@@ -30,7 +30,15 @@ Outputs
   <output_dir>/fn_qc_hvsr/rejected/     – HVSR curves for rejected stations
 
 Usage:
-    python hvsr_fn_qc.py [stations_csv]
+    python hvsr_fn_qc.py [method] [stations_csv]
+
+    method       : "traditional" (default) or "dfa"
+    stations_csv : path to stations CSV (station,Y,X,Z, no header)
+
+Note on DFA:
+    For DFA, the combined object has n_curves = n_days (~30).
+    The σ_ln spread is across daily Fn estimates, not 30 k window peaks.
+    Raise the thresholds accordingly (e.g. WARN=0.5, MAX=0.8).
 """
 
 import sys
@@ -45,22 +53,34 @@ import hvsrpy
 from hvsrpy.hvsr_traditional import HvsrTraditional
 from pathlib import Path
 
+args         = sys.argv[1:]
+method       = "traditional"
+stations_csv = Path("vulcano_stations.csv")
+for a in args:
+    if a in ("traditional", "dfa"):
+        method = a
+    else:
+        stations_csv = Path(a)
+
 # ── Paths ─────────────────────────────────────────────────────────────────────
 output_dir        = Path("/srv/beegfs/scratch/users/c/cabrerap/hvsr_output")
-combined_dir      = output_dir / "combined"
+combined_dir      = output_dir / f"combined_{method}"
 cache_dir         = combined_dir / "cache"
-hist_dir          = output_dir / "fn_qc_histograms"
-hvsr_approved_dir = output_dir / "fn_qc_hvsr" / "approved"
-hvsr_rejected_dir = output_dir / "fn_qc_hvsr" / "rejected"
+hist_dir          = output_dir / f"fn_qc_histograms_{method}"
+hvsr_approved_dir = output_dir / f"fn_qc_hvsr_{method}" / "approved"
+hvsr_rejected_dir = output_dir / f"fn_qc_hvsr_{method}" / "rejected"
 for d in (cache_dir, hist_dir, hvsr_approved_dir, hvsr_rejected_dir):
     d.mkdir(parents=True, exist_ok=True)
 
-stations_csv = Path(sys.argv[1]) if len(sys.argv) > 1 else \
-               Path("vulcano_stations.csv")
-
 # ── Quality thresholds (σ_ln units) ──────────────────────────────────────────
-WARN_SIGMA_LN = 0.3
-MAX_SIGMA_LN  = 0.5
+# Traditional: σ_ln over ~30 000 windows — tight thresholds are meaningful
+# DFA        : σ_ln over ~30 daily curves — loosen thresholds
+if method == "traditional":
+    WARN_SIGMA_LN = 0.3
+    MAX_SIGMA_LN  = 0.5
+else:  # dfa
+    WARN_SIGMA_LN = 0.5
+    MAX_SIGMA_LN  = 0.8
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
 
@@ -173,6 +193,7 @@ combined_csvs = sorted(combined_dir.glob("*_WR.csv"))
 if not combined_csvs:
     raise FileNotFoundError(f"No combined CSVs found in {combined_dir}")
 
+print(f"Method  : {method}")
 print(f"Found {len(combined_csvs)} station(s)   "
       f"thresholds: warn σ_ln>{WARN_SIGMA_LN}  reject σ_ln>{MAX_SIGMA_LN}\n")
 
@@ -276,7 +297,7 @@ for csv_path in combined_csvs:
     plt.close(sfig)
 
 # ── Write global CSV ──────────────────────────────────────────────────────────
-global_csv = output_dir / "fn_qc_summary.csv"
+global_csv = output_dir / f"fn_qc_summary_{method}.csv"
 fieldnames = ["station", "Y", "X", "Z",
               "fn_hz", "fn_mc", "fn_mc_amplitude",
               "fn_mu_geo", "fn_lower_1sigma", "fn_upper_1sigma",
