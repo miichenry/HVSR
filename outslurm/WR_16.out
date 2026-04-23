@@ -1,7 +1,0 @@
-Processing row 16: station L6767,38.44802181,14.95029452,197.951
-Station: L6767
-Starting time: 16:10:26
-Traceback (most recent call last):
-  File "/home/users/h/henrymi/HVSR/hvsr_multiday.py", line 48, in <module>
-    raise RuntimeError(f"No days with complete Z/E/N data found for station {sta}")
-RuntimeError: No days with complete Z/E/N data found for station L6767
