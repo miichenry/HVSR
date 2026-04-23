@@ -29,7 +29,7 @@ A collection of Python (and MATLAB) scripts for computing, filtering, visualisin
 
 ## Overview
 
-This toolkit processes three-component seismic data (Z, E, N channels in **MiniSEED** format) to derive HVSR curves. It is designed for large seismic deployments (e.g. the **VulcaNODES** network) running on HPC clusters with a shared filesystem (BeeGFS), but can be adapted to any local dataset.
+This toolkit processes three-component seismic data (Z, E, N channels in **MiniSEED** format) to derive HVSR curves. It is designed for large seismic deployments running on HPC clusters, but can be adapted to any local dataset.
 
 The two main use-cases are:
 
@@ -75,7 +75,7 @@ conda env create -f hvsr.yml
 conda activate hvsr
 ```
 
-The environment pins all dependencies including:
+The environment pins all dependencies, including:
 
 | Package | Version |
 |---------|---------|
@@ -120,6 +120,9 @@ python hvsr_multiday.py <STATION_NAME>
 **Writes to:** `<output_dir>/output_multiday/<STATION>_WR.csv` and `<STATION>_WR.png`
 
 To reduce memory pressure, lower `BATCH_SIZE` in the script (e.g. to `1` for very large daily files).
+
+> [!WARNING]
+> This scrip not work when batch loading 3 days at a time for a total of 30 days, OOM error when starting hvsrpy preprocessing, for multiple day hvsr processing please use aforementioned hvsr_oneday.py``` 
 
 ---
 
@@ -258,24 +261,9 @@ Figures (`.png`) are saved alongside each CSV showing:
 - Pre- and post-rejection window comparison
 - Single-panel HVSR curve with confidence bounds
 
----
-
-## Language Breakdown
-
-| Language | Share |
-|----------|-------|
-| Python   | 54 %  |
-| MATLAB   | 44.5 %|
-| Shell    | 1.5 % |
-
----
-
 ## Acknowledgements
 
 - [hvsrpy](https://github.com/jpvantassel/hvsrpy) by J.P. Vantassel
 - [OpenHVSR-Inversion](https://github.com/s-gaffet/OpenHVSR) by S. Gaffet et al.
-- VulcaNODES seismic network data
 
 ---
-
-*README generated from source inspection of [miichenry/HVSR](https://github.com/miichenry/HVSR).*
