@@ -20,4 +20,4 @@ echo "Processing row $ROW: station $sfile"
 #python -u hvsr_window_rejection.py $sfile
 #python -u hvsr_multiday.py  $sfile
    
-python -u hvsr_oneday.py  $sfile
+python -u hvsr_oneday.py  $sfile dfa
